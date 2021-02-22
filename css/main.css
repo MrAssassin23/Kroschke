@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "futura-bold-bt";
+  src: url("../assets/fonts/futura-bold-bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "futura-light-bt";
+  src: url("../assets/fonts/futura-light-bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "futurabq-medium";
+  src: url("../assets/fonts/futurabq-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../assets/fonts/Gotham-Medium.otf") format("opentype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+.btn {
+  background-color: #ed7102;
+  display: inline-block;
+  text-decoration: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Gotham-Medium";
+  padding: 0.8rem 1.7rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background-color: #c56b14;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 0 9rem;
+  line-height: 2rem;
+  -webkit-box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+  font-family: "futura-light-bt";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #header-logo {
+  height: 2rem;
+}
+
+nav span.header-links img {
+  width: 20px;
+  height: 21px;
+  margin-right: 0.4rem;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+nav span.header-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  margin-right: 2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav span.header-links a:hover {
+  font-weight: bold;
+}
+
+nav span.header-links p {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ed7102;
+  font-family: "futura-light-bt";
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav span.header-links p:hover {
+  font-weight: bold;
+}
+
+nav span.header-links span#phone {
+  cursor: pointer;
+}
+
+div.header_img-container {
+  height: 100vh;
+  width: 100%;
+  max-height: 100vh;
+  padding-top: 4rem;
+  background: url("../assets/group@3x.png");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.header_img-container div.header_text-container {
+  height: 100%;
+  width: 70%;
+  padding: 0 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.header_img-container div.header_text-container h1 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: 1.29;
+  margin: 1rem 0;
+}
+
+div.header_img-container div.header_text-container h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+div.header_img-container div.header_text-container a {
+  margin: 3.5rem 0;
+}
+
+@media screen and (min-width: 1800px) {
+  nav {
+    padding: 0 9rem;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  nav {
+    padding: 0 7.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 0 4.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0 4rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

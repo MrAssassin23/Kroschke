@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "futura-bold-bt";
+  src: url("../assets/fonts/futura-bold-bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "futura-light-bt";
+  src: url("../assets/fonts/futura-light-bt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "futurabq-medium";
+  src: url("../assets/fonts/futurabq-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../assets/fonts/Gotham-Medium.otf") format("opentype");
+}
+/*# sourceMappingURL=vars.css.map */

@@ -1,0 +1,44 @@
+//Color Pallete
+$font_blue: #005f96;
+$font_white: #ffffff;
+
+//blues Shades
+$blue_shade1: #a5d2d2;
+$blue_shade2: #37afb9;
+$blue_shade3: #005f96;
+
+//colors
+$orange: #ed7102;
+$orange_hover: #c56b14;
+
+//mixins
+@mixin fontstyle($size: 1rem, $weight: normal, $color: $font-light, $family : 'futura-light-bt') {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+}
+@mixin displayflex($direction: row, $align-item: stretch, $justify-content: flex-start ) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}
+
+// fonts
+@font-face {
+  font-family: "futura-bold-bt";
+  src: url("../assets/fonts/futura-bold-bt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "futura-light-bt";
+  src: url("../assets/fonts/futura-light-bt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "futurabq-medium";
+  src: url("../assets/fonts/futurabq-medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../assets/fonts/Gotham-Medium.otf") format("opentype");
+}
