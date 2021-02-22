@@ -1,1 +1,195 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 2rem;
+  background-color: white;
+  padding: 1rem 9rem;
+  box-shadow: 2px 5px 30px rgba($color: #000000, $alpha: 0.3);
+  font-family: "futura-light-bt";
+  @include displayflex($align-item: center, $justify-content: space-between);
+  #header-logo {
+    height: 2rem;
+  }
+  span.header-links {
+    height: auto;
+    img {
+      width: 20px;
+      height: 21px;
+      margin-right: 0.4rem;
+      transform: translateY(20%);
+    }
+    a {
+      text-decoration: none;
+      @include fontstyle(1rem, 300, $font_blue);
+      margin-right: 2rem;
+      transition: 0.2s;
+      text-transform: capitalize;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    p {
+      display: inline-block;
+      @include fontstyle(1rem, 300, $orange);
+      transition: 0.2s;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    span#phone {
+      cursor: pointer;
+    }
+  }
+  span.header-small {
+    display: none;
+    img {
+      height: 25px;
+      width: 25px;
+      padding: 0.2rem 0 0.2rem 0.5rem;
+      box-sizing: content-box;
+    }
+  }
+}
 
+div.header_img-container {
+  height: 100vh;
+  width: 100%;
+  padding-top: 4rem;
+  background: url("../assets/group@3x.png");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  div.background-image {
+    background: url("../assets/group@3x.png");
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  div.header_text-container {
+    height: 100%;
+    width: 70%;
+    padding: 0 9rem;
+
+    @include displayflex(column, $justify-content: center);
+    h1 {
+      @include fontstyle(2.1rem, bold, $font_blue, "futura-bold-bt");
+      line-height: 1.29;
+      margin: 1rem 0;
+    }
+    h3 {
+      @include fontstyle(1.5rem, 300, $font_blue);
+      margin: 0.5rem 0;
+      text-transform: capitalize;
+    }
+    a {
+      margin: 3.5rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  nav {
+    padding: 1rem 9rem;
+  }
+  div.header_img-container {
+    div.header_text-container {
+      padding: 0 9rem;
+    }
+  }
+}
+@media screen and (max-width: 1800px) {
+  nav {
+    padding: 1rem 7.5rem;
+  }
+  div.header_img-container {
+    div.header_text-container {
+      padding: 0 7.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 1rem 4.5rem;
+  }
+  div.header_img-container {
+    div.header_text-container {
+      padding: 0 4.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 1rem 4rem;
+    #header-logo {
+      height: 1.3rem;
+    }
+    span.header-links {
+      a {
+        margin-right: 0.8rem;
+      }
+    }
+  }
+  div.header_img-container {
+    div.header_text-container {
+      padding: 0 4rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 1rem;
+    span.header-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 0px;
+      overflow: hidden;
+      transition: 0.4s ease-in-out;
+      background-color: rgba($color: $blue_shade3, $alpha: 0.8);
+      @include displayflex(column, center, space-evenly);
+      span#phone {
+        display: none;
+      }
+      a {
+        @include fontstyle(1rem, 300, $font_white);
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+    span.header-small {
+      display: block;
+    }
+  }
+  div.header_img-container {
+    background-image: none;
+    height: auto;
+    div.background-image {
+      height: 40vh;
+    }
+    div.header_text-container {
+      height: auto;
+      width: 100%;
+      padding: 2rem 1rem;
+      h1 {
+        @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
+        line-height: 1.35;
+        margin: 1rem 0;
+      }
+      h3 {
+        @include fontstyle(1.3rem, 300, $font_blue);
+        margin: 0.5rem 0;
+        line-height: 1.18;
+        text-transform: capitalize;
+      }
+      a {
+        margin: 2rem 0 1rem;
+      }
+    }
+  }
+}

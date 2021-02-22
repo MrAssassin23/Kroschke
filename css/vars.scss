@@ -17,6 +17,8 @@ $orange_hover: #c56b14;
   font-weight: $weight;
   color: $color;
   font-family: $family;
+  line-height: normal;
+  letter-spacing: normal;
 }
 @mixin displayflex($direction: row, $align-item: stretch, $justify-content: flex-start ) {
   display: flex;

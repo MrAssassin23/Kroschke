@@ -6,6 +6,7 @@
 }
 body {
   margin: 0;
+  scroll-behavior: smooth;
   width: 100%;
 }
 h1,
@@ -13,118 +14,125 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0px;
+  font-weight: normal;
 }
 
-.btn{
-    background-color: $orange;
-    display: inline-block;
-    text-decoration: none;
-    align-self: flex-start;
-    @include fontstyle(0.9rem, 500, $font_white,'Gotham-Medium');
-    padding: 0.8rem 1.7rem;
-    transition: 0.3s;
-    &:hover{
-        transform: scale(0.95);
-        background-color: $orange_hover;
-    }
-}
-
-///Header
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  padding: 0 9rem;
-  line-height: 2rem;
-  box-shadow: 2px 5px 30px rgba($color: #000000, $alpha: 0.3);
-  font-family: "futura-light-bt";
-  @include displayflex($align-item: center, $justify-content: space-between);
-  #header-logo {
-    height: 2rem;
-  }
-  span.header-links {
-    img {
-      width: 20px;
-      height: 21px;
-      margin-right: 0.4rem;
-      transform: translateY(20%);
-    }
-    a {
-      text-decoration: none;
-      @include fontstyle(1rem, 300, $font_blue);
-      margin-right: 2rem;
-      transition: 0.2s;
-      &:hover {
-        font-weight: bold;
-      }
-    }
-    p {
-      display: inline-block;
-      @include fontstyle(1rem, 300, $orange);
-      transition: 0.2s;
-      &:hover {
-        font-weight: bold;
-      }
-    }
-    span#phone {
-      cursor: pointer;
-    }
+.btn {
+  background-color: $orange;
+  display: inline-block;
+  text-decoration: none;
+  align-self: flex-start;
+  @include fontstyle(0.9rem, 500, $font_white, "Gotham-Medium");
+  padding: 0.8rem 1.7rem;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(0.95);
+    background-color: $orange_hover;
   }
 }
 
-div.header_img-container {
-  height: 100vh;
-  width: 100%;
-  max-height: 100vh;
-  padding-top: 4rem;
-  background: url("../assets/group@3x.png");
-  background-position: right bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  div.header_text-container {
-    height: 100%;
-    width: 70%;
-    padding: 0 9rem;
+div.indicator-container{
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+button.indicator{
+  border: none;
+  outline: none;
+  background-color: $font_white;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0.3rem;
+  box-sizing: content-box;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-    @include displayflex(column, $justify-content: center);
-    h1 {
-      @include fontstyle(2.1rem, bold, $font_blue, 'futura-bold-bt');
-      line-height: 1.29;
-      margin: 1rem 0;
-    }
-    h3{
-        @include fontstyle(1.5rem, 300, $font_blue);
-        margin: 0.5rem 0;
-        text-transform: capitalize; 
-    }
-    a{
-        margin: 3.5rem 0 
+button.active-indicator{
+  background-color: $blue_shade3;
+  border: 2px solid $blue_shade2;
+  box-shadow: 0 0 0 2px $blue_shade3;
+}
+
+//Carousel Classes
+.carousel-container {
+  position: relative;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.carousel-slide-container {
+  // width: 400%;
+  display: flex !important;
+  transition: transform 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  // transform: translateX(-50%);
+  > *{
+    flex: 1;
+  }
+}
+///Benifits
+section.benifits {
+  background-color: $blue_shade2;
+  padding: 4rem 9rem;
+  h2.benifit-title {
+    @include fontstyle(1.5rem, bold, $font_white, "futura-bold-bt");
+    line-height: 1.33;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  div.benifit-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    div.benifit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img.benigit-icon {
+        width: 6rem;
+        height: 6rem;
+      }
+      h3.benifit-title {
+        @include fontstyle(1.15rem, 500, $font_white, "futurabq-medium");
+        margin: 1.5rem 0;
+      }
+      p.benifit-desc {
+        @include fontstyle(1.15rem, 300, $font_white, "futura-light-bt");
+        text-align: center;
+      }
     }
   }
 }
 
 @media screen and (min-width: 1800px) {
-  nav {
-    padding: 0 9rem;
+  section.benifits {
+    padding: 4rem 9rem;
   }
 }
 @media screen and (max-width: 1800px) {
-  nav {
-    padding: 0 7.5rem;
+  section.benifits {
+    padding: 4rem 7.5rem;
   }
 }
 @media screen and (max-width: 1200px) {
-  nav {
-    padding: 0 4.5rem;
+  section.benifits {
+    padding: 4rem 4.5rem;
+    div.benifit-container {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 @media screen and (max-width: 1000px) {
-  nav {
-    padding: 0 4rem;
+  section.benifits {
+    padding: 4rem 4rem;
+    div.benifit-container {
+      gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
