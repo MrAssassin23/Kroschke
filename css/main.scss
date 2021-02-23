@@ -136,3 +136,8 @@ section.benifits {
     }
   }
 }
+@media screen and (max-width: 800px) {
+  section.benifits {
+    padding: 4rem 1rem;
+  }
+}

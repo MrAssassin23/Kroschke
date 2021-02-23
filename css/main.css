@@ -491,4 +491,10 @@ section.benifits div.benifit-container div.benifit p.benifit-desc {
         grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media screen and (max-width: 800px) {
+  section.benifits {
+    padding: 4rem 1rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,3 @@
-
 $('#menubar-toogle').click(e => {
     let url = e.target.src
     let new_url
@@ -41,7 +40,7 @@ function createCarousel(parentContainer, parent, childs) {
         carousel_position = position
         console.log(position)
     }
-    
+
     //automate them
     setInterval(() => {
         if(carousel_position === childs-1){
