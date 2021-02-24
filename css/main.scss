@@ -34,11 +34,11 @@ p {
   }
 }
 
-div.indicator-container{
+div.indicator-container {
   text-align: center;
   padding: 2rem 0 0 0;
 }
-button.indicator{
+button.indicator {
   border: none;
   outline: none;
   background-color: $font_white;
@@ -51,7 +51,7 @@ button.indicator{
   cursor: pointer;
 }
 
-button.active-indicator{
+button.active-indicator {
   background-color: $blue_shade3;
   border: 2px solid $blue_shade2;
   box-shadow: 0 0 0 2px $blue_shade3;
@@ -70,7 +70,7 @@ button.active-indicator{
   display: flex !important;
   transition: transform 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   // transform: translateX(-50%);
-  > *{
+  > * {
     flex: 1;
   }
 }
@@ -142,45 +142,43 @@ section.benifits {
   }
 }
 
-
-//services 
-section.services{
+//services
+section.services {
   @include displayflex();
-  width : 100%;
-  div.services-desc{
+  width: 100%;
+  div.services-desc {
     width: 50%;
     box-sizing: border-box;
     padding: 2.5rem 5rem 2rem 7.5rem;
-    h3.services-title{
+    h3.services-title {
       @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
       padding: 0 0 2.5rem 0;
       line-height: 1.33;
     }
-    h4.services-title-desc{
+    h4.services-title-desc {
       @include fontstyle(1.1rem, 300, $font_blue, "futura-light-bt");
       line-height: 1.33;
       padding: 0 0 2.5rem 0;
     }
-    div.expand{
+    div.expand {
       display: none;
       padding: 0 0 2.5rem 0;
-      h3.expand{
+      h3.expand {
         @include fontstyle(0.9rem, bold, $font_blue, "futura-bold-bt");
         line-height: 1.33;
       }
-      .expand-arrow{
+      .expand-arrow {
         height: 10px;
         width: 8px;
         padding: 0.3rem 0.4rem;
         box-sizing: content-box;
         transition: transform 0.3s ease-in-out;
-        transform: rotate(90deg);       
+        transform: rotate(90deg);
       }
     }
-    div.services-container{
-      height: auto;
-      transition :  0.3s ease-in-out;
-      div.service{
+    div.services-container {
+      transition: 0.3s ease-in-out;
+      div.service {
         @include displayflex();
         padding: 0 1rem 2.5rem 0;
         img.arrow {
@@ -189,51 +187,51 @@ section.services{
           box-sizing: content-box;
           padding: 0.3rem 0.8rem 0 1.2rem;
         }
-        div.service-details{
-          h4.service-title{
+        div.service-details {
+          h4.service-title {
             @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
           }
-          h5.service-desc{
+          h5.service-desc {
             @include fontstyle(1.1rem, 300, $font_blue, "futura-light-bt");
-            line-height: 1.33;  
+            line-height: 1.33;
           }
         }
       }
     }
   }
-  div.services-imgs{
+  div.services-imgs {
     width: 50%;
     @include displayflex(column);
-    img{
+    img {
       width: 100%;
       min-height: 33%;
       display: block;
     }
-    .margin_bottom{
+    .margin_bottom {
       margin-bottom: 0.4rem;
     }
   }
 }
 @media screen and (min-width: 1800px) {
   section.benifits {
-    div.services-desc{
+    div.services-desc {
       padding: 2.5rem 5rem 2rem 9rem;
     }
   }
 }
 @media screen and (max-width: 1800px) {
   section.services {
-    div.services-desc{
+    div.services-desc {
       padding: 2.5rem 5rem 2rem 7.5rem;
     }
   }
 }
 @media screen and (max-width: 1200px) {
   section.services {
-    div.services-desc{
+    div.services-desc {
       padding: 2.5rem 1.5rem 2rem 4.5rem;
-      div.services-container{
-        div.service{
+      div.services-container {
+        div.service {
           padding: 0 1rem 1.5rem 0;
         }
       }
@@ -242,7 +240,7 @@ section.services{
 }
 @media screen and (max-width: 1000px) {
   section.services {
-    div.services-desc{
+    div.services-desc {
       padding: 2.5rem 1.5rem 2rem 4rem;
     }
   }
@@ -250,33 +248,444 @@ section.services{
 @media screen and (max-width: 800px) {
   section.services {
     @include displayflex(column);
-    div.services-desc{
+    div.services-desc {
       padding: 2.5rem 1rem 2rem 1rem;
       width: 100%;
-      .services-container{
+      .services-container {
         height: 0;
         overflow: hidden;
       }
-      div.expand{
+      div.expand {
         display: flex;
         align-items: center;
       }
-    } 
-    div.services-imgs{
+    }
+    div.services-imgs {
       width: 100%;
       order: -1;
-      #service-img2, #service-img3{
+      #service-img2,
+      #service-img3 {
         display: none;
       }
     }
   }
 }
-@media screen and (min-width: 800px) {
-  section.services {
-    div.services-desc{
-    div.services-container{
-      
-    } 
+
+// Carousel
+section.carousel {
+  background-color: $blue_shade3;
+  width: 100%;
+  padding-bottom: 4rem;
+  div.slides-container {
+    div.slide {
+      margin: 4rem 25rem 1rem;
+      h4.slide-title {
+        @include fontstyle(1.1rem, 500, $font_white, "futurabq-medium");
+        text-align: center;
+      }
+      h5.slide-desc {
+        @include fontstyle(1.1rem, 500, $font_white, "futura-light-bt");
+        text-align: center;
+        padding: 2rem 4rem;
+        line-height: 1.33;
+      }
+    }
   }
+}
+
+@media screen and (max-width: 1200px) {
+  section.carousel {
+    div.slides-container {
+      div.slide {
+        margin: 4rem 17rem 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.carousel {
+    div.slides-container {
+      div.slide {
+        margin: 4rem 8rem 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.carousel {
+    div.slides-container {
+      div.slide {
+        margin: 4rem 3rem 1rem;
+      }
+    }
+  }
+}
+
+//Portal
+section.portal {
+  margin-bottom: 9rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  div.portal-left {
+    width: 50%;
+    background-color: $blue_shade2;
+    padding: 4rem 12rem 7rem 7.5rem;
+    h3.portal-title {
+      @include fontstyle(1.5rem, 500, $font_white, "futura-bold-bt");
+      line-height: 1.33;
+      margin-bottom: 2rem;
+    }
+    h4.portal-subtitle {
+      @include fontstyle(1.5rem, 300, $font_white, "futura-light-bt");
+      margin-bottom: 2rem;
+    }
+    p.portal-desc {
+      @include fontstyle(1.1rem, 300, $font_white, "futura-light-bt");
+      line-height: 1.33;
+      margin-bottom: 2rem;
+    }
+  }
+  div.portal-right {
+    width: 50%;
+    background-color: $blue_shade1;
+    padding: 4rem 7.5rem 9rem 4rem;
+    div.point-expand {
+      transition: height 0.3s ease-in-out;
+    }
+    div.portal-point {
+      display: flex;
+      margin-bottom: 2rem;
+      img.arrow {
+        height: 10px;
+        width: 8px;
+        box-sizing: content-box;
+        padding: 0.5rem 0.8rem 0 1.2rem;
+      }
+      h4.point-desc {
+        @include fontstyle(1.3rem, 300, $font_blue, "futura-light-bt");
+        line-height: 1.25;
+      }
+    }
+    div.expand-portal {
+      display: none;
+      h3.expand {
+        @include fontstyle(0.9rem, bold, $font_blue, "futura-bold-bt");
+        line-height: 1.33;
+      }
+      .expand-arrow {
+        height: 10px;
+        width: 8px;
+        padding: 0.3rem 0.4rem;
+        box-sizing: content-box;
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  img.tablet {
+    position: absolute;
+    height: 350px;
+    bottom: -150px;
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  section.portal {
+    div.portal-left {
+      padding: 4rem 12rem 7rem 9rem;
+    }
+    div.portal-right {
+      padding: 4rem 9rem 9rem 4rem;
+    }
+  }
+}
+@media screen and (max-width: 1800px) {
+  section.portal {
+    div.portal-left {
+      padding: 4rem 12rem 7rem 7.5rem;
+    }
+    div.portal-right {
+      padding: 4rem 7.5rem 9rem 4rem;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.portal {
+    div.portal-left {
+      padding: 4rem 9.5rem 7rem 4.5rem;
+    }
+    div.portal-right {
+      padding: 4rem 4.5rem 9rem 4rem;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.portal {
+    div.portal-left {
+      padding: 4rem 8rem 7rem 4rem;
+    }
+    div.portal-right {
+      padding: 4rem 4rem 9rem 4rem;
+    }
+    img.tablet {
+      position: absolute;
+      height: 320px;
+      bottom: -150px;
+      left: 31.5%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.portal {
+    flex-direction: column;
+    margin-bottom: 0rem;
+
+    div.portal-left {
+      width: 100%;
+      padding: 4rem 1rem;
+    }
+    div.portal-right {
+      width: 100%;
+      padding: 4rem 1rem;
+      div.point-expand {
+        animation: all 0.3s ease-in-out;
+        height: 0;
+        overflow: hidden;
+      }
+      div.expand-portal {
+        display: flex;
+        align-items: center;
+      }
+    }
+    img.tablet {
+      display: none;
+    }
+  }
+}
+
+//About
+section.about {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  h3.about-title {
+    @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  h5.about-subtitle {
+    @include fontstyle(1.4rem, 300, $font_blue, "futura-light-bt");
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  div.about-container {
+    width: 100%;
+    display: flex;
+    div.about-slide-container {
+      width: 50%;
+    }
+    div.about-left {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, minmax(170px, 1fr));
+      gap: 0.5rem;
+      width: 100%;
+      padding: 1rem 0 2rem 13rem;
+      div.info {
+        padding: 1.5rem 1rem;
+        h4.info-title {
+          @include fontstyle(1.3rem, 300, $font_blue, "futura-light-bt");
+          border-bottom: 3px solid $font_blue;
+          padding-bottom: 0.5rem;
+          span.large {
+            @include fontstyle(2.5rem, 500, $font_blue, "futurabq-medium");
+          }
+        }
+        h5.info-desc {
+          @include fontstyle(1.3rem, 300, $font_blue, "futura-light-bt");
+          padding: 1rem 0;
+        }
+        h4.font-white {
+          @include fontstyle(1.3rem, 300, $font_white, "futura-light-bt");
+          border-bottom: 3px solid $font_white;
+          span.large {
+            @include fontstyle(2.5rem, 500, $font_white, "futurabq-medium");
+          }
+        }
+        h5.font-white {
+          @include fontstyle(1.3rem, 300, $font_white, "futura-light-bt");
+        }
+      }
+      div.spanner {
+        display: none;
+      }
+      #info1,
+      #info4 {
+        background-color: $blue_shade1;
+      }
+      #info2,
+      #info5 {
+        background-color: $blue_shade3;
+      }
+      #info3,
+      #info6 {
+        background-color: $blue_shade2;
+      }
+    }
+    div.about-right {
+      width: 50%;
+      padding: 1rem 13rem 2rem 4rem;
+      h3.about-desc-title {
+        @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
+        margin-bottom: 0.8rem;
+      }
+      h4.about-desc-desc {
+        @include fontstyle(1.1rem, 500, $font_blue, "futura-light-bt");
+        margin-bottom: 2rem;
+        line-height: 1.17;
+      }
+      div.about-right-expander{
+        transition: height 0.3s;
+      }
+      div.expand-about {
+        display: none;
+        padding: 1rem 0 0.5rem 0;
+        h3.expand {
+          @include fontstyle(0.9rem, bold, $font_blue, "futura-bold-bt");
+          line-height: 1.33;
+        }
+        .expand-arrow {
+          height: 10px;
+          width: 8px;
+          padding: 0.3rem 0.4rem;
+          box-sizing: content-box;
+          transition: transform 0.3s ease-in-out;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  a#about-btn {
+    text-align: center;
+    margin: 1rem auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1400px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 9rem;
+      }
+      div.about-right {
+        padding: 1rem 9rem 2rem 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 8rem;
+      }
+      div.about-right {
+        padding: 1rem 8rem 2rem 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 6rem;
+      }
+      div.about-right {
+        padding: 1rem 6rem 2rem 3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1070px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 5rem;
+      }
+      div.about-right {
+        padding: 1rem 5rem 2rem 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.about {
+    div.about-container {
+      flex-direction: column;
+      div.about-slide-container {
+        width: 90.7%;
+        margin: 2rem 2rem;
+        button.indicator {
+          background-color: $blue_shade1;
+        }
+        button.active-indicator {
+          background-color: $blue_shade3;
+          border: 2px solid $font_white;
+          box-shadow: 0 0 0 2px $blue_shade3;
+        }
+      }
+      div.about-left {
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        div.info {
+          display: flex;
+          justify-content: center;
+          div.info-margin {
+            display: inline-block;
+          }
+        }
+        div.spanner {
+          display: block;
+          flex: 0.05;
+          width: 0.5rem;
+        }
+      }
+      div.about-right {
+        width: 100%;
+        padding: 2rem 2rem;
+        div.about-right-expander{
+          height: 7.3rem;
+          overflow: hidden;
+        }
+        div.expand-about {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  section.about {
+    div.about-container {
+      div.about-slide-container {
+        width: 100%;
+        margin: 0;
+        div.about-left {
+          width: 100%;
+          padding: 2rem 0rem;
+        }
+      }
+      div.about-right {
+        width: 100%;
+        padding: 2rem 1rem;
+      }
+    }
   }
 }

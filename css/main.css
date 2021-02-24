@@ -24,6 +24,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   line-height: 2rem;
   background-color: white;
   padding: 1rem 9rem;
@@ -574,7 +575,6 @@ section.services div.services-desc div.expand .expand-arrow {
 }
 
 section.services div.services-desc div.services-container {
-  height: auto;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -715,8 +715,565 @@ section.services div.services-imgs .margin_bottom {
         -ms-flex-order: -1;
             order: -1;
   }
-  section.services div.services-imgs #service-img2, section.services div.services-imgs #service-img3 {
+  section.services div.services-imgs #service-img2,
+  section.services div.services-imgs #service-img3 {
     display: none;
+  }
+}
+
+section.carousel {
+  background-color: #005f96;
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+section.carousel div.slides-container div.slide {
+  margin: 4rem 25rem 1rem;
+}
+
+section.carousel div.slides-container div.slide h4.slide-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+section.carousel div.slides-container div.slide h5.slide-desc {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  padding: 2rem 4rem;
+  line-height: 1.33;
+}
+
+@media screen and (max-width: 1200px) {
+  section.carousel div.slides-container div.slide {
+    margin: 4rem 17rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.carousel div.slides-container div.slide {
+    margin: 4rem 8rem 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.carousel div.slides-container div.slide {
+    margin: 4rem 3rem 1rem;
+  }
+}
+
+section.portal {
+  margin-bottom: 9rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+section.portal div.portal-left {
+  width: 50%;
+  background-color: #37afb9;
+  padding: 4rem 12rem 7rem 7.5rem;
+}
+
+section.portal div.portal-left h3.portal-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  margin-bottom: 2rem;
+}
+
+section.portal div.portal-left h4.portal-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+}
+
+section.portal div.portal-left p.portal-desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  margin-bottom: 2rem;
+}
+
+section.portal div.portal-right {
+  width: 50%;
+  background-color: #a5d2d2;
+  padding: 4rem 7.5rem 9rem 4rem;
+}
+
+section.portal div.portal-right div.point-expand {
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+section.portal div.portal-right div.portal-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+section.portal div.portal-right div.portal-point img.arrow {
+  height: 10px;
+  width: 8px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0.5rem 0.8rem 0 1.2rem;
+}
+
+section.portal div.portal-right div.portal-point h4.point-desc {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.25;
+}
+
+section.portal div.portal-right div.expand-portal {
+  display: none;
+}
+
+section.portal div.portal-right div.expand-portal h3.expand {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+}
+
+section.portal div.portal-right div.expand-portal .expand-arrow {
+  height: 10px;
+  width: 8px;
+  padding: 0.3rem 0.4rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+section.portal img.tablet {
+  position: absolute;
+  height: 350px;
+  bottom: -150px;
+  left: 35%;
+}
+
+@media screen and (min-width: 1800px) {
+  section.portal div.portal-left {
+    padding: 4rem 12rem 7rem 9rem;
+  }
+  section.portal div.portal-right {
+    padding: 4rem 9rem 9rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  section.portal div.portal-left {
+    padding: 4rem 12rem 7rem 7.5rem;
+  }
+  section.portal div.portal-right {
+    padding: 4rem 7.5rem 9rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section.portal div.portal-left {
+    padding: 4rem 9.5rem 7rem 4.5rem;
+  }
+  section.portal div.portal-right {
+    padding: 4rem 4.5rem 9rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.portal div.portal-left {
+    padding: 4rem 8rem 7rem 4rem;
+  }
+  section.portal div.portal-right {
+    padding: 4rem 4rem 9rem 4rem;
+  }
+  section.portal img.tablet {
+    position: absolute;
+    height: 320px;
+    bottom: -150px;
+    left: 31.5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.portal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0rem;
+  }
+  section.portal div.portal-left {
+    width: 100%;
+    padding: 4rem 1rem;
+  }
+  section.portal div.portal-right {
+    width: 100%;
+    padding: 4rem 1rem;
+  }
+  section.portal div.portal-right div.point-expand {
+    -webkit-animation: all 0.3s ease-in-out;
+            animation: all 0.3s ease-in-out;
+    height: 0;
+    overflow: hidden;
+  }
+  section.portal div.portal-right div.expand-portal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.portal img.tablet {
+    display: none;
+  }
+}
+
+section.about {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+section.about h3.about-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+section.about h5.about-subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section.about div.about-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.about div.about-container div.about-slide-container {
+  width: 50%;
+}
+
+section.about div.about-container div.about-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (minmax(170px, 1fr))[3];
+      grid-template-rows: repeat(3, minmax(170px, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 0 2rem 13rem;
+}
+
+section.about div.about-container div.about-left div.info {
+  padding: 1.5rem 1rem;
+}
+
+section.about div.about-container div.about-left div.info h4.info-title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  border-bottom: 3px solid #005f96;
+  padding-bottom: 0.5rem;
+}
+
+section.about div.about-container div.about-left div.info h4.info-title span.large {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+section.about div.about-container div.about-left div.info h5.info-desc {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 1rem 0;
+}
+
+section.about div.about-container div.about-left div.info h4.font-white {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  border-bottom: 3px solid #ffffff;
+}
+
+section.about div.about-container div.about-left div.info h4.font-white span.large {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+section.about div.about-container div.about-left div.info h5.font-white {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+section.about div.about-container div.about-left div.spanner {
+  display: none;
+}
+
+section.about div.about-container div.about-left #info1,
+section.about div.about-container div.about-left #info4 {
+  background-color: #a5d2d2;
+}
+
+section.about div.about-container div.about-left #info2,
+section.about div.about-container div.about-left #info5 {
+  background-color: #005f96;
+}
+
+section.about div.about-container div.about-left #info3,
+section.about div.about-container div.about-left #info6 {
+  background-color: #37afb9;
+}
+
+section.about div.about-container div.about-right {
+  width: 50%;
+  padding: 1rem 13rem 2rem 4rem;
+}
+
+section.about div.about-container div.about-right h3.about-desc-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 0.8rem;
+}
+
+section.about div.about-container div.about-right h4.about-desc-desc {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+  line-height: 1.17;
+}
+
+section.about div.about-container div.about-right div.about-right-expander {
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+section.about div.about-container div.about-right div.expand-about {
+  display: none;
+  padding: 1rem 0 0.5rem 0;
+}
+
+section.about div.about-container div.about-right div.expand-about h3.expand {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+}
+
+section.about div.about-container div.about-right div.expand-about .expand-arrow {
+  height: 10px;
+  width: 8px;
+  padding: 0.3rem 0.4rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+section.about a#about-btn {
+  text-align: center;
+  margin: 1rem auto;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1400px) {
+  section.about div.about-container div.about-left {
+    padding: 1rem 0 2rem 9rem;
+  }
+  section.about div.about-container div.about-right {
+    padding: 1rem 9rem 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  section.about div.about-container div.about-left {
+    padding: 1rem 0 2rem 8rem;
+  }
+  section.about div.about-container div.about-right {
+    padding: 1rem 8rem 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section.about div.about-container div.about-left {
+    padding: 1rem 0 2rem 6rem;
+  }
+  section.about div.about-container div.about-right {
+    padding: 1rem 6rem 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  section.about div.about-container div.about-left {
+    padding: 1rem 0 2rem 5rem;
+  }
+  section.about div.about-container div.about-right {
+    padding: 1rem 5rem 2rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.about div.about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.about div.about-container div.about-slide-container {
+    width: 90.7%;
+    margin: 2rem 2rem;
+  }
+  section.about div.about-container div.about-slide-container button.indicator {
+    background-color: #a5d2d2;
+  }
+  section.about div.about-container div.about-slide-container button.active-indicator {
+    background-color: #005f96;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0 0 0 2px #005f96;
+            box-shadow: 0 0 0 2px #005f96;
+  }
+  section.about div.about-container div.about-left {
+    padding: 0;
+    display: block;
+    overflow: hidden;
+  }
+  section.about div.about-container div.about-left div.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.about div.about-container div.about-left div.info div.info-margin {
+    display: inline-block;
+  }
+  section.about div.about-container div.about-left div.spanner {
+    display: block;
+    -webkit-box-flex: 0.05;
+        -ms-flex: 0.05;
+            flex: 0.05;
+    width: 0.5rem;
+  }
+  section.about div.about-container div.about-right {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+  section.about div.about-container div.about-right div.about-right-expander {
+    height: 7.3rem;
+    overflow: hidden;
+  }
+  section.about div.about-container div.about-right div.expand-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.about div.about-container div.about-slide-container {
+    width: 100%;
+    margin: 0;
+  }
+  section.about div.about-container div.about-slide-container div.about-left {
+    width: 100%;
+    padding: 2rem 0rem;
+  }
+  section.about div.about-container div.about-right {
+    width: 100%;
+    padding: 2rem 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
