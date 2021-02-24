@@ -12,7 +12,43 @@ $('#menubar-toogle').click(e => {
     $('#menubar-toogle').attr('src', new_url)
 })
 
-createCarousel('benifit_carousel__container', 'benifit-container', 4)
+$('div.expand').click(() => {
+    let height = $('div.services-container').height()
+    if(height === 0){    
+        $('div.services-container').css({ 'height': 'auto' })
+        $('img.expand-arrow').css({ 'transform': 'rotate(270deg)' })
+        $('h3.expand').text('Weniger lesen')
+    }else{
+        $('div.services-container').css({ 'height': '0' })
+        $('img.expand-arrow').css({ 'transform': 'rotate(90deg)' })
+        $('h3.expand').text('Mehr lesen')
+    }
+})
+
+function doCarousel() {
+    createCarousel('benifit_carousel__container', 'benifit-container', 4)
+}
+
+function stopCarousel() {
+    $('.carousel-container').removeClass('carousel-container')
+    let div_parent = $('.carousel-slide-container').removeClass('carousel-slide-container')
+    div_parent.css({ 'width': '100%' })
+    $('.indicator-container').remove()
+}
+
+if ($(window).width() < 800) {
+    doCarousel()
+}
+$(window).resize(function () {
+    if ($(window).width() < 800) {
+        doCarousel()
+    }
+    if ($(window).width() > 800) {
+        stopCarousel()
+        $('div.services-container').css({ 'height': 'auto' })
+    }
+});
+
 
 function createCarousel(parentContainer, parent, childs) {
     //add carousel classes
@@ -22,7 +58,7 @@ function createCarousel(parentContainer, parent, childs) {
 
     //set proper width
     div_parent.css({ 'width': `${childs * 100}%` })
-    console.log({ div_parentContainer, div_parent })
+    // console.log({ div_parentContainer, div_parent })
 
     //create indicators
     let indicators = createIndicators(4)
@@ -38,18 +74,11 @@ function createCarousel(parentContainer, parent, childs) {
         div_parent.css({ 'transform': `translateX(-${(100 / childs) * position}%)` })
         indicator_childs[position].classList.add('active-indicator')
         carousel_position = position
-        console.log(position)
+
     }
 
-    //automate them
-    setInterval(() => {
-        if(carousel_position === childs-1){
-            moveCarousel(0)
-        }else{
-            moveCarousel(carousel_position+1)
-        }
-    },3500)
-    div_parentContainer.append(indicators)
+    let hasIndicators = div_parentContainer.has('.indicator-container').length
+    if (hasIndicators === 0) div_parentContainer.append(indicators)
 }
 
 function createIndicators(childs) {

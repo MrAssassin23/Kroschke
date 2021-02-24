@@ -497,4 +497,226 @@ section.benifits div.benifit-container div.benifit p.benifit-desc {
     padding: 4rem 1rem;
   }
 }
+
+section.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+section.services div.services-desc {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2.5rem 5rem 2rem 7.5rem;
+}
+
+section.services div.services-desc h3.services-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 0 0 2.5rem 0;
+  line-height: 1.33;
+}
+
+section.services div.services-desc h4.services-title-desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  padding: 0 0 2.5rem 0;
+}
+
+section.services div.services-desc div.expand {
+  display: none;
+  padding: 0 0 2.5rem 0;
+}
+
+section.services div.services-desc div.expand h3.expand {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+}
+
+section.services div.services-desc div.expand .expand-arrow {
+  height: 10px;
+  width: 8px;
+  padding: 0.3rem 0.4rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+section.services div.services-desc div.services-container {
+  height: auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+section.services div.services-desc div.services-container div.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 1rem 2.5rem 0;
+}
+
+section.services div.services-desc div.services-container div.service img.arrow {
+  height: 10px;
+  width: 8px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0.3rem 0.8rem 0 1.2rem;
+}
+
+section.services div.services-desc div.services-container div.service div.service-details h4.service-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+section.services div.services-desc div.services-container div.service div.service-details h5.service-desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #005f96;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+}
+
+section.services div.services-imgs {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section.services div.services-imgs img {
+  width: 100%;
+  min-height: 33%;
+  display: block;
+}
+
+section.services div.services-imgs .margin_bottom {
+  margin-bottom: 0.4rem;
+}
+
+@media screen and (min-width: 1800px) {
+  section.benifits div.services-desc {
+    padding: 2.5rem 5rem 2rem 9rem;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  section.services div.services-desc {
+    padding: 2.5rem 5rem 2rem 7.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section.services div.services-desc {
+    padding: 2.5rem 1.5rem 2rem 4.5rem;
+  }
+  section.services div.services-desc div.services-container div.service {
+    padding: 0 1rem 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.services div.services-desc {
+    padding: 2.5rem 1.5rem 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section.services div.services-desc {
+    padding: 2.5rem 1rem 2rem 1rem;
+    width: 100%;
+  }
+  section.services div.services-desc .services-container {
+    height: 0;
+    overflow: hidden;
+  }
+  section.services div.services-desc div.expand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.services div.services-imgs {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  section.services div.services-imgs #service-img2, section.services div.services-imgs #service-img3 {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
