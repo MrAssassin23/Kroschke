@@ -1,0 +1,223 @@
+section.about {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  h3.about-title {
+    @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  h5.about-subtitle {
+    @include fontstyle(1.4rem, 300, $font_blue, "futura-light-bt");
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  div.about-container {
+    width: 100%;
+    display: flex;
+    div.about-slide-container {
+      width: 50%;
+    }
+    div.about-left {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, minmax(170px, 1fr));
+      gap: 0.5rem;
+      width: 100%;
+      padding: 1rem 0 2rem 13rem;
+      div.info {
+        padding: 1.5rem 1rem;
+        h4.info-title {
+          @include fontstyle(1.3rem, 300, $font_blue, "futura-light-bt");
+          border-bottom: 3px solid $font_blue;
+          padding-bottom: 0.5rem;
+          span.large {
+            @include fontstyle(2.5rem, 500, $font_blue, "futurabq-medium");
+          }
+        }
+        h5.info-desc {
+          @include fontstyle(1.3rem, 300, $font_blue, "futura-light-bt");
+          padding: 1rem 0;
+        }
+        h4.font-white {
+          @include fontstyle(1.3rem, 300, $font_white, "futura-light-bt");
+          border-bottom: 3px solid $font_white;
+          span.large {
+            @include fontstyle(2.5rem, 500, $font_white, "futurabq-medium");
+          }
+        }
+        h5.font-white {
+          @include fontstyle(1.3rem, 300, $font_white, "futura-light-bt");
+        }
+      }
+      div.spanner {
+        display: none;
+      }
+      #info1,
+      #info4 {
+        background-color: $blue_shade1;
+      }
+      #info2,
+      #info5 {
+        background-color: $blue_shade3;
+      }
+      #info3,
+      #info6 {
+        background-color: $blue_shade2;
+      }
+    }
+    div.about-right {
+      width: 50%;
+      padding: 1rem 13rem 2rem 4rem;
+      h3.about-desc-title {
+        @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
+        margin-bottom: 0.8rem;
+      }
+      h4.about-desc-desc {
+        @include fontstyle(1.1rem, 500, $font_blue, "futura-light-bt");
+        margin-bottom: 2rem;
+        line-height: 1.17;
+      }
+      div.about-right-expander {
+        transition: height 0.3s;
+      }
+      div.expand-about {
+        display: none;
+        padding: 1rem 0 0.5rem 0;
+        h3.expand {
+          @include fontstyle(0.9rem, bold, $font_blue, "futura-bold-bt");
+          line-height: 1.33;
+        }
+        .expand-arrow {
+          height: 10px;
+          width: 8px;
+          padding: 0.3rem 0.4rem;
+          box-sizing: content-box;
+          transition: transform 0.3s ease-in-out;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  a#about-btn {
+    text-align: center;
+    margin: 1rem auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1400px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 9rem;
+      }
+      div.about-right {
+        padding: 1rem 9rem 2rem 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 8rem;
+      }
+      div.about-right {
+        padding: 1rem 8rem 2rem 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 6rem;
+      }
+      div.about-right {
+        padding: 1rem 6rem 2rem 3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1070px) {
+  section.about {
+    div.about-container {
+      div.about-left {
+        padding: 1rem 0 2rem 5rem;
+      }
+      div.about-right {
+        padding: 1rem 5rem 2rem 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.about {
+    div.about-container {
+      flex-direction: column;
+      div.about-slide-container {
+        width: 90.7%;
+        margin: 2rem 2rem;
+        button.indicator {
+          background-color: $blue_shade1;
+        }
+        button.active-indicator {
+          background-color: $blue_shade3;
+          border: 2px solid $font_white;
+          box-shadow: 0 0 0 2px $blue_shade3;
+        }
+      }
+      div.about-left {
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        div.info {
+          display: flex;
+          justify-content: center;
+          div.info-margin {
+            display: inline-block;
+          }
+        }
+        div.spanner {
+          display: block;
+          flex: 0.05;
+          width: 0.5rem;
+        }
+      }
+      div.about-right {
+        width: 100%;
+        padding: 2rem 2rem;
+        div.about-right-expander {
+          height: 7.3rem;
+          overflow: hidden;
+        }
+        div.expand-about {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  section.about {
+    div.about-container {
+      div.about-slide-container {
+        width: 100%;
+        margin: 0;
+        div.about-left {
+          width: 100%;
+          padding: 2rem 0rem;
+        }
+      }
+      div.about-right {
+        width: 100%;
+        padding: 2rem 1rem;
+      }
+    }
+  }
+}

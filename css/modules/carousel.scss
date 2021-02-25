@@ -1,0 +1,48 @@
+section.carousel {
+  background-color: $blue_shade3;
+  width: 100%;
+  padding-bottom: 4rem;
+  div.slides-container {
+    div.slide {
+      margin: 4rem 25rem 1rem;
+      h4.slide-title {
+        @include fontstyle(1.1rem, 500, $font_white, "futurabq-medium");
+        text-align: center;
+      }
+      h5.slide-desc {
+        @include fontstyle(1.1rem, 500, $font_white, "futura-light-bt");
+        text-align: center;
+        padding: 2rem 4rem;
+        line-height: 1.33;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section.carousel {
+    div.slides-container {
+      div.slide {
+        margin: 4rem 17rem 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.carousel {
+    div.slides-container {
+      div.slide {
+        margin: 4rem 8rem 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.carousel {
+    div.slides-container {
+      div.slide {
+        margin: 4rem 3rem 1rem;
+      }
+    }
+  }
+}

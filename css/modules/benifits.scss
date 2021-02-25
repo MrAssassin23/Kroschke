@@ -1,0 +1,66 @@
+section.benifits {
+  background-color: $blue_shade2;
+  padding: 4rem 9rem;
+  h2.benifit-title {
+    @include fontstyle(1.5rem, bold, $font_white, "futura-bold-bt");
+    line-height: 1.33;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  div.benifit-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    div.benifit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img.benigit-icon {
+        width: 6rem;
+        height: 6rem;
+      }
+      h3.benifit-title {
+        @include fontstyle(1.15rem, 500, $font_white, "futurabq-medium");
+        margin: 1.5rem 0;
+      }
+      p.benifit-desc {
+        @include fontstyle(1.15rem, 300, $font_white, "futura-light-bt");
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  section.benifits {
+    padding: 4rem 9rem;
+  }
+}
+@media screen and (max-width: 1800px) {
+  section.benifits {
+    padding: 4rem 7.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.benifits {
+    padding: 4rem 4.5rem;
+    div.benifit-container {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.benifits {
+    padding: 4rem 4rem;
+    div.benifit-container {
+      gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.benifits {
+    padding: 4rem 1rem;
+  }
+}

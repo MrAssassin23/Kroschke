@@ -1,0 +1,127 @@
+section.services {
+  @include displayflex();
+  width: 100%;
+  div.services-desc {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2.5rem 5rem 2rem 7.5rem;
+    h3.services-title {
+      @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
+      padding: 0 0 2.5rem 0;
+      line-height: 1.33;
+    }
+    h4.services-title-desc {
+      @include fontstyle(1.1rem, 300, $font_blue, "futura-light-bt");
+      line-height: 1.33;
+      padding: 0 0 2.5rem 0;
+    }
+    div.expand {
+      display: none;
+      padding: 0 0 2.5rem 0;
+      h3.expand {
+        @include fontstyle(0.9rem, bold, $font_blue, "futura-bold-bt");
+        line-height: 1.33;
+      }
+      .expand-arrow {
+        height: 10px;
+        width: 8px;
+        padding: 0.3rem 0.4rem;
+        box-sizing: content-box;
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(90deg);
+      }
+    }
+    div.services-container {
+      transition: 0.3s ease-in-out;
+      div.service {
+        @include displayflex();
+        padding: 0 1rem 2.5rem 0;
+        img.arrow {
+          height: 10px;
+          width: 8px;
+          box-sizing: content-box;
+          padding: 0.3rem 0.8rem 0 1.2rem;
+        }
+        div.service-details {
+          h4.service-title {
+            @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
+          }
+          h5.service-desc {
+            @include fontstyle(1.1rem, 300, $font_blue, "futura-light-bt");
+            line-height: 1.33;
+          }
+        }
+      }
+    }
+  }
+  div.services-imgs {
+    width: 50%;
+    @include displayflex(column);
+    img {
+      width: 100%;
+      min-height: 33%;
+      display: block;
+    }
+    .margin_bottom {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+@media screen and (min-width: 1800px) {
+  section.benifits {
+    div.services-desc {
+      padding: 2.5rem 5rem 2rem 9rem;
+    }
+  }
+}
+@media screen and (max-width: 1800px) {
+  section.services {
+    div.services-desc {
+      padding: 2.5rem 5rem 2rem 7.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.services {
+    div.services-desc {
+      padding: 2.5rem 1.5rem 2rem 4.5rem;
+      div.services-container {
+        div.service {
+          padding: 0 1rem 1.5rem 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.services {
+    div.services-desc {
+      padding: 2.5rem 1.5rem 2rem 4rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.services {
+    @include displayflex(column);
+    div.services-desc {
+      padding: 2.5rem 1rem 2rem 1rem;
+      width: 100%;
+      .services-container {
+        height: 0;
+        overflow: hidden;
+      }
+      div.expand {
+        display: flex;
+        align-items: center;
+      }
+    }
+    div.services-imgs {
+      width: 100%;
+      order: -1;
+      #service-img2,
+      #service-img3 {
+        display: none;
+      }
+    }
+  }
+}
