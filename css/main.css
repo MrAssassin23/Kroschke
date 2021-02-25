@@ -1355,9 +1355,14 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
 }
 
 @media screen and (max-width: 800px) {
-  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner {
-    height: 13rem;
-    padding: 0 0.5rem;
+  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner img.owner-pic {
+    position: absolute;
+    right: 4%;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner div.owner-name {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
   }
   section.owners div.owners-container div.owner-carousel-container div.indicator-container {
     background-color: white;
