@@ -1,0 +1,215 @@
+section.owners {
+  width: 100%;
+  margin: 4rem 0;
+  h4.owner-title {
+    @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
+    text-align: center;
+    line-height: 1.33;
+  }
+  div.owners-container {
+    width: 60%;
+    margin: 3rem auto;
+    div.owner-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 0;
+      height: 2rem;
+      background-color: $blue_shade1;
+
+      h3.bold {
+        @include fontstyle(1.5rem, bold, $font_blue, "futurabq-medium");
+        line-height: 0.54;
+        display: inline-block;
+        padding: 0 1.5rem;
+        p.owner-data {
+          @include fontstyle(1.5rem, normal, $font_blue, "futurabq-medium");
+          line-height: 0.54;
+          display: inline-block;
+          cursor: pointer;
+          &:hover {
+            @include fontstyle(1.5rem, normal, $orange, "futurabq-medium");
+          }
+        }
+      }
+      h3#contact {
+        border-left: 2px solid $font_blue;
+        line-height: normal;
+      }
+    }
+    div.owner-carousel-container {
+      width: 100%;
+      div.owner-container {
+        display: flex;
+        background-color: $blue_shade1;
+        div.owner {
+          display: flex;
+          position: relative;
+          width: 50%;
+          height: 18rem;
+          padding: 0 1.5rem;
+          img.owner-pic {
+            position: absolute;
+            bottom: 0;
+            height: 16rem;
+          }
+          div.owner-name {
+            position: absolute;
+            top: 4rem;
+            left: 50%;
+            h4.owner-name {
+              @include fontstyle(1.1rem, bold, $font_blue, "futurabq-medium");
+              line-height: 1.28;
+              padding: 0.3rem 0;
+            }
+            h5.owner-post {
+              @include fontstyle(1.1rem, normal, $font_blue, "futurabq-medium");
+              line-height: 1.28;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  section.owners {
+    div.owners-container {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  section.owners {
+    div.owners-container {
+      width: 75%;
+      div.owner-carousel-container {
+        width: 100%;
+        div.owner-container {
+          div.owner {
+            height: 14rem;
+            img.owner-pic {
+              position: absolute;
+              bottom: 0;
+              height: 13rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.owners {
+    div.owners-container {
+      div.owner-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-bottom: 1.5rem;
+        h3#contact {
+          margin: 0.7rem 0;
+          border-left: none;
+        }
+      }
+      div.owner-carousel-container {
+        div.owner-container {
+          div.owner {
+            height: 14rem;
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.owners {
+    div.owners-container {
+      div.owner-carousel-container {
+        div.owner-container {
+          div.owner {
+            height: 13rem;
+            padding: 0 0.5rem;
+          }
+        }
+        div.indicator-container {
+          background-color: white;
+          button.indicator {
+            background-color: $blue_shade1;
+          }
+          button.active-indicator {
+            background-color: $blue_shade3;
+            border: 2px solid $font_white;
+            box-shadow: 0 0 0 2px $blue_shade3;
+          }
+        }
+      }
+    }
+  }
+}
+section.certificates {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  h3.certificate-title {
+    @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
+    line-height: 1.33;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  div.certificate-carousel-container {
+    div.certificates-container {
+      width: 100%;
+      @include displayflex(row, $justify-content: center);
+      img#certi1 {
+        width: 92px;
+        height: 61px;
+        margin-right: 47px;
+      }
+      #certi2 {
+        width: 78px;
+        height: 78px;
+        margin-right: 47px;
+      }
+      #certi3 {
+        width: 112px;
+        height: 62px;
+        margin-right: 47px;
+      }
+      #certi4 {
+        width: 76px;
+        height: 76px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.certificates {
+    div.certificate-carousel-container {
+      div.certificates-container {
+        align-items: flex-start;
+        .img-wrapper {
+          text-align: center;
+          img#certi1,
+          img#certi2,
+          img#certi3,
+          img#certi4 {
+            margin: 0;
+          }
+        }
+      }
+      div.indicator-container {
+        button.indicator {
+          background-color: $blue_shade1;
+        }
+        button.active-indicator {
+          background-color: $blue_shade3;
+          border: 2px solid $font_white;
+          box-shadow: 0 0 0 2px $blue_shade3;
+        }
+      }
+    }
+  }
+}

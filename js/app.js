@@ -52,11 +52,35 @@ $('div.expand-about').click(() => {
     }
 })
 
+$('#frm1').click(() => {
+    $('div.form-buttons .active').removeClass('active')
+    $('#frm1').addClass('active')
+
+    $('div.forms form.active').removeClass('active')
+    $('#form1').addClass('active')
+})
+$('#frm2').click(() => {
+    $('div.form-buttons .active').removeClass('active')
+    $('#frm2').addClass('active')
+
+    $('div.forms form.active').removeClass('active')
+    $('#form2').addClass('active')
+})
+$('#frm3').click(() => {
+    $('div.form-buttons .active').removeClass('active')
+    $('#frm3').addClass('active')
+
+    $('div.forms form.active').removeClass('active')
+    $('#form3').addClass('active')
+})
+
 createCarousel('carousel', 'slides-container', 2)
 
 function doCarousel() {
     createCarousel('benifit_carousel__container', 'benifit-container', 4)
     createCarousel( 'about-slide-container','about-left',3 )
+    createCarousel('owner-carousel-container','owner-container',2)
+    createCarousel('certificate-carousel-container','certificate-container',4)
 }
 
 function stopCarousel() {

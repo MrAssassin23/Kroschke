@@ -1181,6 +1181,282 @@ section.services div.services-imgs .margin_bottom {
   }
 }
 
+section.owners {
+  width: 100%;
+  margin: 4rem 0;
+}
+
+section.owners h4.owner-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  line-height: 1.33;
+}
+
+section.owners div.owners-container {
+  width: 60%;
+  margin: 3rem auto;
+}
+
+section.owners div.owners-container div.owner-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 0;
+  height: 2rem;
+  background-color: #a5d2d2;
+}
+
+section.owners div.owners-container div.owner-contact h3.bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 0.54;
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+
+section.owners div.owners-container div.owner-contact h3.bold p.owner-data {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 0.54;
+  display: inline-block;
+  cursor: pointer;
+}
+
+section.owners div.owners-container div.owner-contact h3.bold p.owner-data:hover {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #ed7102;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+section.owners div.owners-container div.owner-contact h3#contact {
+  border-left: 2px solid #005f96;
+  line-height: normal;
+}
+
+section.owners div.owners-container div.owner-carousel-container {
+  width: 100%;
+}
+
+section.owners div.owners-container div.owner-carousel-container div.owner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #a5d2d2;
+}
+
+section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 18rem;
+  padding: 0 1.5rem;
+}
+
+section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner img.owner-pic {
+  position: absolute;
+  bottom: 0;
+  height: 16rem;
+}
+
+section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner div.owner-name {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+}
+
+section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner div.owner-name h4.owner-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.28;
+  padding: 0.3rem 0;
+}
+
+section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner div.owner-name h5.owner-post {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #005f96;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.28;
+}
+
+@media screen and (max-width: 1500px) {
+  section.owners div.owners-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  section.owners div.owners-container {
+    width: 75%;
+  }
+  section.owners div.owners-container div.owner-carousel-container {
+    width: 100%;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner {
+    height: 14rem;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner img.owner-pic {
+    position: absolute;
+    bottom: 0;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.owners div.owners-container div.owner-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+  section.owners div.owners-container div.owner-contact h3#contact {
+    margin: 0.7rem 0;
+    border-left: none;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner {
+    height: 14rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner {
+    height: 13rem;
+    padding: 0 0.5rem;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.indicator-container {
+    background-color: white;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.indicator-container button.indicator {
+    background-color: #a5d2d2;
+  }
+  section.owners div.owners-container div.owner-carousel-container div.indicator-container button.active-indicator {
+    background-color: #005f96;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0 0 0 2px #005f96;
+            box-shadow: 0 0 0 2px #005f96;
+  }
+}
+
+section.certificates {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+section.certificates h3.certificate-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005f96;
+  font-family: "futura-bold-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section.certificates div.certificate-carousel-container div.certificates-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.certificates div.certificate-carousel-container div.certificates-container img#certi1 {
+  width: 92px;
+  height: 61px;
+  margin-right: 47px;
+}
+
+section.certificates div.certificate-carousel-container div.certificates-container #certi2 {
+  width: 78px;
+  height: 78px;
+  margin-right: 47px;
+}
+
+section.certificates div.certificate-carousel-container div.certificates-container #certi3 {
+  width: 112px;
+  height: 62px;
+  margin-right: 47px;
+}
+
+section.certificates div.certificate-carousel-container div.certificates-container #certi4 {
+  width: 76px;
+  height: 76px;
+}
+
+@media screen and (max-width: 800px) {
+  section.certificates div.certificate-carousel-container div.certificates-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.certificates div.certificate-carousel-container div.certificates-container .img-wrapper {
+    text-align: center;
+  }
+  section.certificates div.certificate-carousel-container div.certificates-container .img-wrapper img#certi1,
+  section.certificates div.certificate-carousel-container div.certificates-container .img-wrapper img#certi2,
+  section.certificates div.certificate-carousel-container div.certificates-container .img-wrapper img#certi3,
+  section.certificates div.certificate-carousel-container div.certificates-container .img-wrapper img#certi4 {
+    margin: 0;
+  }
+  section.certificates div.certificate-carousel-container div.indicator-container button.indicator {
+    background-color: #a5d2d2;
+  }
+  section.certificates div.certificate-carousel-container div.indicator-container button.active-indicator {
+    background-color: #005f96;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 0 0 0 2px #005f96;
+            box-shadow: 0 0 0 2px #005f96;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1281,76 +1557,313 @@ button.active-indicator {
           flex: 1;
 }
 
-section.owners {
+section.contact-us {
+  background-color: #005f96;
   width: 100%;
-  margin: 3.5rem 0;
+  padding: 4rem 0;
 }
 
-section.owners h4.owner-title {
+section.contact-us h3.contact-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #005f96;
+  color: #ffffff;
   font-family: "futura-bold-bt";
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
   line-height: 1.33;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-section.owners div.owners-container {
+section.contact-us h4.contact-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section.contact-us div.form-buttons {
   width: 60%;
-  background-color: #a5d2d2;
-  margin: 0 auto;
-}
-
-section.owners div.owners-container div.owner-contact {
+  min-width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3rem 0;
-  height: 2rem;
+  margin: 0 auto 3rem;
 }
 
-section.owners div.owners-container div.owner-contact h3.bold {
-  font-size: 1.5rem;
+section.contact-us div.form-buttons button.from-btns {
+  border: 0;
+  outline: 0;
+  width: 15rem;
+  margin: 0 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+section.contact-us div.form-buttons button.from-btns:hover {
+  background-color: white;
+  color: #005f96;
+}
+
+section.contact-us div.form-buttons button.active {
+  background-color: white;
+  color: #005f96;
+}
+
+section.contact-us div.forms {
+  width: 45%;
+  margin: 0 auto;
+  min-width: 650px;
+}
+
+section.contact-us div.forms form.active {
+  display: -ms-grid !important;
+  display: grid !important;
+}
+
+section.contact-us div.forms form.contact-form {
+  display: none;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+section.contact-us div.forms form.contact-form input[type="text"],
+section.contact-us div.forms form.contact-form input[type="email"],
+section.contact-us div.forms form.contact-form input[type='tel'] {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  padding: 0.3rem 0;
+}
+
+section.contact-us div.forms form.contact-form input[type="text"]::-webkit-input-placeholder,
+section.contact-us div.forms form.contact-form input[type="email"]::-webkit-input-placeholder,
+section.contact-us div.forms form.contact-form input[type='tel']::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  padding: 0.3rem 0;
+}
+
+section.contact-us div.forms form.contact-form input[type="text"]:-ms-input-placeholder,
+section.contact-us div.forms form.contact-form input[type="email"]:-ms-input-placeholder,
+section.contact-us div.forms form.contact-form input[type='tel']:-ms-input-placeholder {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  padding: 0.3rem 0;
+}
+
+section.contact-us div.forms form.contact-form input[type="text"]::-ms-input-placeholder,
+section.contact-us div.forms form.contact-form input[type="email"]::-ms-input-placeholder,
+section.contact-us div.forms form.contact-form input[type='tel']::-ms-input-placeholder {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  padding: 0.3rem 0;
+}
+
+section.contact-us div.forms form.contact-form input[type="text"]::placeholder,
+section.contact-us div.forms form.contact-form input[type="email"]::placeholder,
+section.contact-us div.forms form.contact-form input[type='tel']::placeholder {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+  padding: 0.3rem 0;
+}
+
+section.contact-us div.forms form.contact-form input[type="checkbox"] {
+  height: 1rem;
+  outline: none;
+  width: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+section.contact-us div.forms form.contact-form label {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.33;
+}
+
+section.contact-us div.forms form.contact-form .full {
+  grid-column: span 2;
+}
+
+section.contact-us div.forms form.contact-form .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact-us div.forms form.contact-form .topic-title {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
+  padding-top: 1.5rem;
+  line-height: 1.33;
+}
+
+section.contact-us div.forms form.contact-form .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact-us div.forms form.contact-form .contact,
+section.contact-us div.forms form.contact-form .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact-us div.forms form.contact-form .contact p,
+section.contact-us div.forms form.contact-form .email p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: "futura-light-bt";
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.75;
+}
+
+section.contact-us div.forms form.contact-form .contact p.data,
+section.contact-us div.forms form.contact-form .email p.data {
+  font-size: 0.9rem;
   font-weight: bold;
-  color: #005f96;
-  font-family: "futurabq-medium";
+  color: #ffffff;
+  font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
-  line-height: 0.54;
-  display: inline-block;
-  padding: 0 1.5rem;
+  line-height: 1.75;
+  cursor: pointer;
 }
 
-section.owners div.owners-container div.owner-contact h3.bold p.owner-data {
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: #005f96;
-  font-family: "futurabq-medium";
-  line-height: normal;
-  letter-spacing: normal;
-  line-height: 0.54;
-  display: inline-block;
-}
-
-section.owners div.owners-container div.owner-contact h3.bold p.owner-data:hover {
-  font-size: 1.5rem;
-  font-weight: normal;
+section.contact-us div.forms form.contact-form .contact p.data :hover,
+section.contact-us div.forms form.contact-form .email p.data :hover {
+  font-size: 0.9rem;
+  font-weight: bold;
   color: #ed7102;
-  font-family: "futurabq-medium";
+  font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
 }
 
-section.owners div.owners-container div.owner-contact h3#contact {
-  border-left: 2px solid #005f96;
-  line-height: normal;
+section.contact-us div.forms form#form3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.7rem;
+}
+
+section.contact-us div.forms form#form3 .full {
+  grid-column: span 3;
+}
+
+@media screen and (max-width: 800px) {
+  section.contact-us div.form-buttons {
+    width: 90%;
+    min-width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.contact-us div.form-buttons button.from-btns {
+    margin: 0.4rem 0.3rem;
+  }
+  section.contact-us div.forms {
+    min-width: 300px;
+    width: 90%;
+  }
+  section.contact-us div.forms form.contact-form .half {
+    grid-column: span 2;
+  }
+  section.contact-us div.forms form#form3 .half {
+    grid-column: span 3;
+  }
 }
 /*# sourceMappingURL=main.css.map */

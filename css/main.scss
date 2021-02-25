@@ -6,6 +6,7 @@
 @import "./modules/carousel.scss";
 @import "./modules/portal.scss";
 @import "./modules/services.scss";
+@import "./modules/owners.scss";
 
 * {
   box-sizing: border-box;
@@ -83,54 +84,153 @@ button.active-indicator {
   }
 }
 
-//owners
-section.owners {
+//contact-us
+section.contact-us {
+  background-color: $blue_shade3;
   width: 100%;
-  margin: 3.5rem 0;
-  h4.owner-title {
-    @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
-    text-align: center;
+  padding: 4rem 0;
+  h3.contact-title {
+    @include fontstyle(1.5rem, bold, $font_white, "futura-bold-bt");
     line-height: 1.33;
+    margin-bottom: 2rem;
+    text-align: center;
   }
-  div.owners-container {
+  h4.contact-subtitle {
+    @include fontstyle(1.1rem, 300, $font_white, "futura-light-bt");
+    line-height: 1.33;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  div.form-buttons {
     width: 60%;
-    background-color: $blue_shade1;
+    min-width: 650px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 3rem;
+    button.from-btns {
+      border: 0;
+      outline: 0;
+      width: 15rem;
+      margin: 0 0.3rem;
+      @include fontstyle(1.1rem, 300, $font_white, "futurabq-medium");
+      line-height: 24px;
+      padding: 0.5rem 0;
+      background-color: transparent;
+      border: 2px solid white;
+      &:hover {
+        background-color: white;
+        color: $font_blue;
+      }
+    }
+    button.active {
+      background-color: white;
+      color: $font_blue;
+    }
+  }
+  div.forms {
+    width: 45%;
     margin: 0 auto;
-    div.owner-contact {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 0;
-      height: 2rem;
-      h3.bold {
-        @include fontstyle(1.5rem, bold, $font_blue, "futurabq-medium");
-        line-height: 0.54;
-        display: inline-block;
-        padding: 0 1.5rem ;
-        p.owner-data {
-          @include fontstyle(1.5rem, normal, $font_blue, "futurabq-medium");
-          line-height: 0.54;
-          display: inline-block;
-          &:hover {
-            @include fontstyle(1.5rem, normal, $orange, "futurabq-medium");
+    min-width: 650px;
+    form.active{
+      display: grid !important;
+    }
+    form.contact-form {
+      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem 2rem;
+      input[type="text"],
+      input[type="email"],
+      input[type='tel'] {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+        @include fontstyle(1.1rem, 300, $font_white, "futura-light-bt");
+        line-height: 1.33;
+        padding: 0.3rem 0;
+      }
+      input[type="text"]::placeholder,
+      input[type="email"]::placeholder,
+      input[type='tel']::placeholder {
+        @include fontstyle(1.1rem, 300, $font_white, "futura-light-bt");
+        line-height: 1.33;
+        padding: 0.3rem 0;
+      }
+      input[type="checkbox"] {
+        // appearance: none;
+        height: 1rem;
+        outline: none;
+        width: 1rem;
+        background-color: transparent;
+        border: 2px solid white;
+        transform: translateY(15%);
+      }
+      label {
+        @include fontstyle(1.1rem, 300, $font_white, "futura-light-bt");
+        line-height: 1.33;
+      }
+      .full {
+        grid-column: span 2;
+      }
+      .btn-container {
+        @include displayflex($justify-content: center);
+      }
+      .topic-title {
+        @include fontstyle(1.1rem, 300, $font_white, "futurabq-medium");
+        padding-top: 1.5rem;
+        line-height: 1.33;
+      }
+      .contact-container {
+        @include displayflex(column, $justify-content: center);
+      }
+      .contact,
+      .email {
+        @include displayflex($justify-content: center);
+        p {
+          @include fontstyle(0.9rem, 300, $font_white, "futura-light-bt");
+          line-height: 1.75;
+        }
+        p.data {
+          @include fontstyle(0.9rem, bold, $font_white, "futura-light-bt");
+          line-height: 1.75;
+          cursor: pointer;
+          :hover {
+            @include fontstyle(0.9rem, bold, $orange, "futura-light-bt");
           }
         }
       }
-      h3#contact{
-        border-left: 2px solid $font_blue;
-        line-height: normal;
+    }
+    form#form3 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem 1.7rem;
+      .full {
+        grid-column: span 3;
       }
     }
-
-    div.owner-carousel-container {
-      div.owner-conatiner {
-        div.owner {
-          img.owner-pic {
-          }
-          h4.owner-name {
-          }
-          h5.owner-post {
-          }
+  }
+}
+@media screen and (max-width: 800px) {
+  section.contact-us {
+    div.form-buttons {
+      width: 90%;
+      min-width: 300px;
+      flex-direction: column;
+      align-items: center;
+      button.from-btns {
+        margin: 0.4rem 0.3rem;
+      }
+    }
+    div.forms {
+      min-width: 300px;
+      width: 90%;
+      form.contact-form {
+        .half {
+          grid-column: span 2;
+        }
+      }
+      form#form3 {
+        .half {
+          grid-column: span 3;
         }
       }
     }
