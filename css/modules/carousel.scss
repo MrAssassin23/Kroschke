@@ -17,6 +17,14 @@ section.carousel {
       }
     }
   }
+  button.indicator {
+    background-color: $blue_shade2;
+  }
+  button.active-indicator {
+    background-color: $font_white;
+    border: 2px solid $blue_shade3;
+    box-shadow: 0 0 0 1.5px $font_white;
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -746,6 +746,17 @@ section.carousel div.slides-container div.slide h5.slide-desc {
   line-height: 1.33;
 }
 
+section.carousel button.indicator {
+  background-color: #37afb9;
+}
+
+section.carousel button.active-indicator {
+  background-color: #ffffff;
+  border: 2px solid #005f96;
+  -webkit-box-shadow: 0 0 0 1.5px #ffffff;
+          box-shadow: 0 0 0 1.5px #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
   section.carousel div.slides-container div.slide {
     margin: 4rem 17rem 1rem;
@@ -1333,6 +1344,9 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
 }
 
 @media screen and (max-width: 1000px) {
+  section.owners div.owners-container {
+    width: 85%;
+  }
   section.owners div.owners-container div.owner-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1355,6 +1369,9 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
 }
 
 @media screen and (max-width: 800px) {
+  section.owners div.owners-container {
+    width: 100%;
+  }
   section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner img.owner-pic {
     position: absolute;
     right: 4%;
