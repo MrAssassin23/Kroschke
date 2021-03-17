@@ -717,11 +717,11 @@ section.benifits div.benifit-container div.benifit p.benifit-desc {
 section.carousel {
   background-color: #005f96;
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
 }
 
 section.carousel div.slides-container div.slide {
-  margin: 4rem 25rem 1rem;
+  margin: 3.5rem 25rem 0rem;
 }
 
 section.carousel div.slides-container div.slide h4.slide-title {
@@ -746,11 +746,15 @@ section.carousel div.slides-container div.slide h5.slide-desc {
   line-height: 1.33;
 }
 
-section.carousel button.indicator {
+section.carousel div.indicator-container {
+  padding: 0;
+}
+
+section.carousel div.indicator-container button.indicator {
   background-color: #37afb9;
 }
 
-section.carousel button.active-indicator {
+section.carousel div.indicator-container button.active-indicator {
   background-color: #ffffff;
   border: 2px solid #005f96;
   -webkit-box-shadow: 0 0 0 1.5px #ffffff;
@@ -787,7 +791,7 @@ section.portal {
 section.portal div.portal-left {
   width: 50%;
   background-color: #37afb9;
-  padding: 4rem 12rem 7rem 7.5rem;
+  padding: 3.5rem 12rem 5.5rem 7.5rem;
 }
 
 section.portal div.portal-left h3.portal-title {
@@ -798,7 +802,7 @@ section.portal div.portal-left h3.portal-title {
   line-height: normal;
   letter-spacing: normal;
   line-height: 1.33;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 section.portal div.portal-left h4.portal-subtitle {
@@ -808,7 +812,7 @@ section.portal div.portal-left h4.portal-subtitle {
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 section.portal div.portal-left p.portal-desc {
@@ -825,7 +829,7 @@ section.portal div.portal-left p.portal-desc {
 section.portal div.portal-right {
   width: 50%;
   background-color: #a5d2d2;
-  padding: 4rem 7.5rem 9rem 4rem;
+  padding: 3.5rem 7.5rem 9rem 3.5rem;
 }
 
 section.portal div.portal-right div.point-expand {
@@ -837,7 +841,7 @@ section.portal div.portal-right div.portal-point {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 section.portal div.portal-right div.portal-point img.arrow {
@@ -849,7 +853,7 @@ section.portal div.portal-right div.portal-point img.arrow {
 }
 
 section.portal div.portal-right div.portal-point h4.point-desc {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -895,37 +899,37 @@ section.portal img.tablet {
 
 @media screen and (min-width: 1800px) {
   section.portal div.portal-left {
-    padding: 4rem 12rem 7rem 9rem;
+    padding: 3.5rem 12rem 5.5rem 9rem;
   }
   section.portal div.portal-right {
-    padding: 4rem 9rem 9rem 4rem;
+    padding: 3.5rem 9rem 9rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1800px) {
   section.portal div.portal-left {
-    padding: 4rem 12rem 7rem 7.5rem;
+    padding: 3.5rem 12rem 5.5rem 7.5rem;
   }
   section.portal div.portal-right {
-    padding: 4rem 7.5rem 9rem 4rem;
+    padding: 3.5rem 7.5rem 9rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   section.portal div.portal-left {
-    padding: 4rem 9.5rem 7rem 4.5rem;
+    padding: 3.5rem 9.5rem 5.5rem 4.5rem;
   }
   section.portal div.portal-right {
-    padding: 4rem 4.5rem 9rem 4rem;
+    padding: 3.5rem 4.5rem 9rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   section.portal div.portal-left {
-    padding: 4rem 8rem 7rem 4rem;
+    padding: 3.5rem 8rem 5.5rem 4rem;
   }
   section.portal div.portal-right {
-    padding: 4rem 4rem 9rem 4rem;
+    padding: 3.5rem 4rem 9rem 3.5rem;
   }
   section.portal img.tablet {
     position: absolute;
@@ -1370,7 +1374,7 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
 
 @media screen and (max-width: 800px) {
   section.owners div.owners-container {
-    width: 100%;
+    width: 90%;
   }
   section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner img.owner-pic {
     position: absolute;
@@ -1392,6 +1396,12 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
     border: 2px solid #ffffff;
     -webkit-box-shadow: 0 0 0 2px #005f96;
             box-shadow: 0 0 0 2px #005f96;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.owners div.owners-container {
+    width: 100%;
   }
 }
 
@@ -1568,7 +1578,7 @@ section.contact-us div.forms form.contact-form {
 
 section.contact-us div.forms form.contact-form input[type="text"],
 section.contact-us div.forms form.contact-form input[type="email"],
-section.contact-us div.forms form.contact-form input[type='tel'] {
+section.contact-us div.forms form.contact-form input[type="tel"] {
   background-color: transparent;
   outline: none;
   border: none;
@@ -1585,7 +1595,7 @@ section.contact-us div.forms form.contact-form input[type='tel'] {
 
 section.contact-us div.forms form.contact-form input[type="text"]::-webkit-input-placeholder,
 section.contact-us div.forms form.contact-form input[type="email"]::-webkit-input-placeholder,
-section.contact-us div.forms form.contact-form input[type='tel']::-webkit-input-placeholder {
+section.contact-us div.forms form.contact-form input[type="tel"]::-webkit-input-placeholder {
   font-size: 1.1rem;
   font-weight: 300;
   color: #ffffff;
@@ -1598,7 +1608,7 @@ section.contact-us div.forms form.contact-form input[type='tel']::-webkit-input-
 
 section.contact-us div.forms form.contact-form input[type="text"]:-ms-input-placeholder,
 section.contact-us div.forms form.contact-form input[type="email"]:-ms-input-placeholder,
-section.contact-us div.forms form.contact-form input[type='tel']:-ms-input-placeholder {
+section.contact-us div.forms form.contact-form input[type="tel"]:-ms-input-placeholder {
   font-size: 1.1rem;
   font-weight: 300;
   color: #ffffff;
@@ -1611,7 +1621,7 @@ section.contact-us div.forms form.contact-form input[type='tel']:-ms-input-place
 
 section.contact-us div.forms form.contact-form input[type="text"]::-ms-input-placeholder,
 section.contact-us div.forms form.contact-form input[type="email"]::-ms-input-placeholder,
-section.contact-us div.forms form.contact-form input[type='tel']::-ms-input-placeholder {
+section.contact-us div.forms form.contact-form input[type="tel"]::-ms-input-placeholder {
   font-size: 1.1rem;
   font-weight: 300;
   color: #ffffff;
@@ -1624,7 +1634,7 @@ section.contact-us div.forms form.contact-form input[type='tel']::-ms-input-plac
 
 section.contact-us div.forms form.contact-form input[type="text"]::placeholder,
 section.contact-us div.forms form.contact-form input[type="email"]::placeholder,
-section.contact-us div.forms form.contact-form input[type='tel']::placeholder {
+section.contact-us div.forms form.contact-form input[type="tel"]::placeholder {
   font-size: 1.1rem;
   font-weight: 300;
   color: #ffffff;
@@ -1636,13 +1646,43 @@ section.contact-us div.forms form.contact-form input[type='tel']::placeholder {
 }
 
 section.contact-us div.forms form.contact-form input[type="checkbox"] {
-  height: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 1.5rem;
   outline: none;
-  width: 1rem;
+  width: 1.5rem;
   background-color: transparent;
   border: 2px solid white;
-  -webkit-transform: translateY(15%);
-          transform: translateY(15%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact-us div.forms form.contact-form input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  display: none;
+  content: "\f00c";
+  padding-top: 0.1rem;
+  font-size: 0.75rem;
+  color: white;
+}
+
+section.contact-us div.forms form.contact-form input[type="checkbox"]::before {
+  content: "";
+}
+
+section.contact-us div.forms form.contact-form input[type="checkbox"]:checked::after {
+  display: block;
 }
 
 section.contact-us div.forms form.contact-form label {
@@ -1895,10 +1935,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 1px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 

@@ -1,10 +1,10 @@
 section.carousel {
   background-color: $blue_shade3;
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
   div.slides-container {
     div.slide {
-      margin: 4rem 25rem 1rem;
+      margin: 3.5rem 25rem 0rem;
       h4.slide-title {
         @include fontstyle(1.1rem, 500, $font_white, "futurabq-medium");
         text-align: center;
@@ -17,13 +17,16 @@ section.carousel {
       }
     }
   }
-  button.indicator {
-    background-color: $blue_shade2;
-  }
-  button.active-indicator {
-    background-color: $font_white;
-    border: 2px solid $blue_shade3;
-    box-shadow: 0 0 0 1.5px $font_white;
+  div.indicator-container {
+    padding: 0;
+    button.indicator {
+      background-color: $blue_shade2;
+    }
+    button.active-indicator {
+      background-color: $font_white;
+      border: 2px solid $blue_shade3;
+      box-shadow: 0 0 0 1.5px $font_white;
+    }
   }
 }
 

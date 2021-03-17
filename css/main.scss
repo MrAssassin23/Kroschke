@@ -90,8 +90,8 @@ footer {
   width: 100%;
   background-color: $blue_shade2;
   display: flex;
-  padding-top: 1px;
   justify-content: space-between;
+  box-shadow: 2px -5px 30px rgba($color: #000000, $alpha: 0.3);
   position: relative;
   img.footer-logo {
     height: 290px;
