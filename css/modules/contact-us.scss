@@ -51,9 +51,11 @@ section.contact-us {
       display: none;
       grid-template-columns: repeat(2, 1fr);
       gap: 2.5rem 2rem;
+
       input[type="text"],
       input[type="email"],
-      input[type="tel"] {
+      input[type="tel"],
+      select {
         background-color: transparent;
         outline: none;
         border: none;
@@ -65,9 +67,13 @@ section.contact-us {
       input[type="text"]::placeholder,
       input[type="email"]::placeholder,
       input[type="tel"]::placeholder {
-        @include fontstyle(1.1rem, 300, $font_white, "futura-light-bt");
+        @include fontstyle(1.1rem, 300, #a5d2d2, "futura-light-bt");
         line-height: 1.33;
         padding: 0.3rem 0;
+      }
+
+      select {
+        color: #a5d2d2;
       }
       input[type="checkbox"] {
         appearance: none;
@@ -76,6 +82,7 @@ section.contact-us {
         width: 1.5rem;
         background-color: transparent;
         border: 2px solid white;
+        margin: 0 0.3rem 0 0;
         transform: translateY(-20%);
         display: inline-flex;
         align-items: center;

@@ -1,6 +1,7 @@
 section.about {
   width: 100%;
-  margin: 2rem 0 0 0;
+  padding-top: 1px;
+  margin: 3rem 0 0 0;
   h3.about-title {
     @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
     line-height: 1.33;
@@ -9,7 +10,7 @@ section.about {
     margin-bottom: 1rem;
   }
   h5.about-subtitle {
-    @include fontstyle(1.4rem, 300, $font_blue, "futura-light-bt");
+    @include fontstyle(23px, 300, $font_blue, "futura-light-bt");
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -38,7 +39,7 @@ section.about {
         }
         h5.info-desc {
           @include fontstyle(1.3rem, 300, $font_blue, "futura-light-bt");
-          padding: 1rem 0;
+          padding: 0.6rem 0;
         }
         h4.font-white {
           @include fontstyle(1.3rem, 300, $font_white, "futura-light-bt");
@@ -71,11 +72,11 @@ section.about {
       width: 50%;
       padding: 1rem 13rem 2rem 4rem;
       h3.about-desc-title {
-        @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
+        @include fontstyle(18px, 500, $font_blue, "futurabq-medium");
         margin-bottom: 0.8rem;
       }
       h4.about-desc-desc {
-        @include fontstyle(1.1rem, 500, $font_blue, "futura-light-bt");
+        @include fontstyle(18px, 500, $font_blue, "futura-light-bt");
         margin-bottom: 2rem;
         line-height: 1.17;
       }
@@ -193,7 +194,7 @@ section.about {
         width: 100%;
         padding: 2rem 2rem;
         div.about-right-expander {
-          height: 7.3rem;
+          height: 6.7rem;
           overflow: hidden;
         }
         div.expand-about {

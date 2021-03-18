@@ -20,11 +20,11 @@ section.benifits {
         height: 6rem;
       }
       h3.benifit-title {
-        @include fontstyle(1.15rem, 500, $font_white, "futurabq-medium");
+        @include fontstyle(18px, 500, $font_white, "futurabq-medium");
         margin: 1.5rem 0;
       }
       p.benifit-desc {
-        @include fontstyle(1.15rem, 300, $font_white, "futura-light-bt");
+        @include fontstyle(18px, 300, $font_white, "futura-light-bt");
         text-align: center;
       }
     }

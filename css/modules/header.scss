@@ -17,15 +17,15 @@ nav {
   span.header-links {
     height: auto;
     img {
-      width: 20px;
-      height: 21px;
+      width: 18px;
+      height: 19px;
       margin-right: 0.4rem;
       transform: translateY(20%);
     }
     a {
       text-decoration: none;
-      @include fontstyle(1rem, 300, $font_blue);
-      margin-right: 2rem;
+      @include fontstyle(1rem, 300, $font_blue, "futura-light-bt");
+      margin-right: 3rem;
       transition: 0.2s;
       text-transform: capitalize;
       &:hover {
@@ -77,12 +77,12 @@ div.header_img-container {
 
     @include displayflex(column, $justify-content: center);
     h1 {
-      @include fontstyle(2.1rem, bold, $font_blue, "futura-bold-bt");
+      @include fontstyle(34px, bold, $font_blue, "futura-bold-bt");
       line-height: 1.29;
       margin: 1rem 0;
     }
     h3 {
-      @include fontstyle(1.5rem, 300, $font_blue);
+      @include fontstyle(23px , 300, $font_blue);
       margin: 0.5rem 0;
       text-transform: capitalize;
     }
@@ -115,6 +115,14 @@ div.header_img-container {
 @media screen and (max-width: 1200px) {
   nav {
     padding: 1rem 4.5rem;
+    #header-logo {
+      height: 1.55rem;
+    }
+    span.header-links {
+      a {
+        margin-right: 2rem;
+      }
+    }
   }
   div.header_img-container {
     div.header_text-container {
@@ -126,11 +134,11 @@ div.header_img-container {
   nav {
     padding: 1rem 4rem;
     #header-logo {
-      height: 1.3rem;
+      height: 1.5rem;
     }
     span.header-links {
       a {
-        margin-right: 0.8rem;
+        margin-right: 1.4rem;
       }
     }
   }
@@ -143,6 +151,9 @@ div.header_img-container {
 @media screen and (max-width: 800px) {
   nav {
     padding: 1rem;
+    #header-logo {
+      height: 2.5rem;
+    }
     span.header-links {
       position: absolute;
       top: 100%;
@@ -164,7 +175,9 @@ div.header_img-container {
       }
     }
     span.header-small {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   div.header_img-container {

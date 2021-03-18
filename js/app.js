@@ -42,12 +42,12 @@ $("div.expand-portal").click(() => {
 $("div.expand-about").click(() => {
   let height = $("div.about-right-expander").height();
 
-  if (height === 117) {
+  if (height < 100) {
     $("div.about-right-expander").css({ height: "auto" });
     $("div.expand-about img.expand-arrow").css({ transform: "rotate(270deg)" });
     $("div.expand-about h3.expand").text("Weniger lesen");
   } else {
-    $("div.about-right-expander").css({ height: "7.3rem" });
+    $("div.about-right-expander").css({ height: "6.7rem" });
     $("div.expand-about img.expand-arrow").css({ transform: "rotate(90deg)" });
     $("div.expand-about h3.expand").text("Mehr lesen");
   }
@@ -60,6 +60,7 @@ $("#frm1").click(() => {
   $("div.forms form.active").removeClass("active");
   $("#form1").addClass("active");
 });
+
 $("#frm2").click(() => {
   $("div.form-buttons .active").removeClass("active");
   $("#frm2").addClass("active");
@@ -67,6 +68,7 @@ $("#frm2").click(() => {
   $("div.forms form.active").removeClass("active");
   $("#form2").addClass("active");
 });
+
 $("#frm3").click(() => {
   $("div.form-buttons .active").removeClass("active");
   $("#frm3").addClass("active");
@@ -97,14 +99,17 @@ function stopCarousel() {
 if ($(window).width() < 800) {
   doCarousel();
 }
+
 $(window).resize(function () {
   if ($(window).width() < 800) {
     doCarousel();
     $("div.services-container").css({ height: "0", overflow: "hidden" });
+    $("span.header-links").css({ height: "0" });
   }
   if ($(window).width() > 800) {
     stopCarousel();
     $("div.services-container").css({ height: "auto" });
+    $("span.header-links").css({ height: "auto" });
   }
 });
 

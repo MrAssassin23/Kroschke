@@ -35,7 +35,7 @@ html {
   display: inline-block;
   text-decoration: none;
   align-self: flex-start;
-  @include fontstyle(0.9rem, 500, $font_white, "Gotham-Medium");
+  @include fontstyle(14px, 500, $font_white, "Gotham-Medium");
   padding: 0.8rem 1.7rem;
   transition: 0.3s;
   &:hover {
@@ -138,9 +138,12 @@ footer {
         padding-right: 0.7rem;
       }
       h4.item-desc {
-        font-size: 1.1rem;
+        @include fontstyle(1.1rem, normal, $font_white, "futurabq-medium");
         line-height: 2;
         text-transform: capitalize;
+        &:hover {
+          color: $blue_shade3;
+        }
       }
       &:hover {
         color: $blue_shade3;
@@ -149,7 +152,7 @@ footer {
   }
 }
 @media screen and (max-width: 1400px) {
-  footer{
+  footer {
     img.footer-logo {
       height: 250px;
       width: 350px;
@@ -157,7 +160,7 @@ footer {
   }
 }
 @media screen and (max-width: 1100px) {
-  footer{
+  footer {
     img.footer-logo {
       height: 230px;
       width: 300px;
@@ -165,7 +168,10 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
-  footer{
+  html{
+    font-size: 14px;
+  }
+  footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -178,7 +184,7 @@ footer {
       left: 0;
       transform: translateX(0);
     }
-    div.right{
+    div.right {
       margin-top: 2rem;
       align-items: center;
       padding-right: 0rem;

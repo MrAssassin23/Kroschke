@@ -13,22 +13,24 @@ section.owners {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 3rem 0;
+      padding: 3rem 0 1.7rem;
       height: 2rem;
       background-color: $blue_shade1;
 
       h3.bold {
-        @include fontstyle(1.5rem, bold, $font_blue, "futurabq-medium");
+        @include fontstyle(1.5rem, 500, $font_blue, "futurabq-medium");
         line-height: 0.54;
         display: inline-block;
         padding: 0 1.5rem;
         p.owner-data {
-          @include fontstyle(1.5rem, normal, $font_blue, "futurabq-medium");
+          @include fontstyle(1.5rem, normal, $font_blue, "futura-light-bt");
           line-height: 0.54;
           display: inline-block;
+          letter-spacing: 0.5px;
           cursor: pointer;
           &:hover {
-            @include fontstyle(1.5rem, normal, $orange, "futurabq-medium");
+            @include fontstyle(1.5rem, normal, $orange, "futura-light-bt");
+            letter-spacing: 0.5px;
           }
         }
       }
@@ -58,12 +60,12 @@ section.owners {
             top: 4rem;
             left: 50%;
             h4.owner-name {
-              @include fontstyle(1.1rem, bold, $font_blue, "futurabq-medium");
+              @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
               line-height: 1.28;
               padding: 0.3rem 0;
             }
             h5.owner-post {
-              @include fontstyle(1.1rem, normal, $font_blue, "futurabq-medium");
+              @include fontstyle(1.1rem, normal, $font_blue, "futura-light-bt");
               line-height: 1.28;
             }
           }

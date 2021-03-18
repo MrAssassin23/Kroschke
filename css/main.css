@@ -55,8 +55,8 @@ nav span.header-links {
 }
 
 nav span.header-links img {
-  width: 20px;
-  height: 21px;
+  width: 18px;
+  height: 19px;
   margin-right: 0.4rem;
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
@@ -70,7 +70,7 @@ nav span.header-links a {
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
-  margin-right: 2rem;
+  margin-right: 3rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   text-transform: capitalize;
@@ -150,7 +150,7 @@ div.header_img-container div.header_text-container {
 }
 
 div.header_img-container div.header_text-container h1 {
-  font-size: 2.1rem;
+  font-size: 34px;
   font-weight: bold;
   color: #005f96;
   font-family: "futura-bold-bt";
@@ -161,7 +161,7 @@ div.header_img-container div.header_text-container h1 {
 }
 
 div.header_img-container div.header_text-container h3 {
-  font-size: 1.5rem;
+  font-size: 23px;
   font-weight: 300;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -197,6 +197,12 @@ div.header_img-container div.header_text-container a {
   nav {
     padding: 1rem 4.5rem;
   }
+  nav #header-logo {
+    height: 1.55rem;
+  }
+  nav span.header-links a {
+    margin-right: 2rem;
+  }
   div.header_img-container div.header_text-container {
     padding: 0 4.5rem;
   }
@@ -207,10 +213,10 @@ div.header_img-container div.header_text-container a {
     padding: 1rem 4rem;
   }
   nav #header-logo {
-    height: 1.3rem;
+    height: 1.5rem;
   }
   nav span.header-links a {
-    margin-right: 0.8rem;
+    margin-right: 1.4rem;
   }
   div.header_img-container div.header_text-container {
     padding: 0 4rem;
@@ -220,6 +226,9 @@ div.header_img-container div.header_text-container a {
 @media screen and (max-width: 800px) {
   nav {
     padding: 1rem;
+  }
+  nav #header-logo {
+    height: 2.5rem;
   }
   nav span.header-links {
     position: absolute;
@@ -260,7 +269,15 @@ div.header_img-container div.header_text-container a {
     font-weight: bold;
   }
   nav span.header-small {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   div.header_img-container {
     background-image: none;
@@ -302,7 +319,8 @@ div.header_img-container div.header_text-container a {
 
 section.about {
   width: 100%;
-  margin: 2rem 0 0 0;
+  padding-top: 1px;
+  margin: 3rem 0 0 0;
 }
 
 section.about h3.about-title {
@@ -319,7 +337,7 @@ section.about h3.about-title {
 }
 
 section.about h5.about-subtitle {
-  font-size: 1.4rem;
+  font-size: 23px;
   font-weight: 300;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -383,7 +401,7 @@ section.about div.about-container div.about-left div.info h5.info-desc {
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
 }
 
 section.about div.about-container div.about-left div.info h4.font-white {
@@ -439,7 +457,7 @@ section.about div.about-container div.about-right {
 }
 
 section.about div.about-container div.about-right h3.about-desc-title {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   color: #005f96;
   font-family: "futurabq-medium";
@@ -449,7 +467,7 @@ section.about div.about-container div.about-right h3.about-desc-title {
 }
 
 section.about div.about-container div.about-right h4.about-desc-desc {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -586,7 +604,7 @@ section.about a#about-btn {
     padding: 2rem 2rem;
   }
   section.about div.about-container div.about-right div.about-right-expander {
-    height: 7.3rem;
+    height: 6.7rem;
     overflow: hidden;
   }
   section.about div.about-container div.about-right div.expand-about {
@@ -655,7 +673,7 @@ section.benifits div.benifit-container div.benifit img.benigit-icon {
 }
 
 section.benifits div.benifit-container div.benifit h3.benifit-title {
-  font-size: 1.15rem;
+  font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   font-family: "futurabq-medium";
@@ -665,7 +683,7 @@ section.benifits div.benifit-container div.benifit h3.benifit-title {
 }
 
 section.benifits div.benifit-container div.benifit p.benifit-desc {
-  font-size: 1.15rem;
+  font-size: 18px;
   font-weight: 300;
   color: #ffffff;
   font-family: "futura-light-bt";
@@ -725,7 +743,7 @@ section.carousel div.slides-container div.slide {
 }
 
 section.carousel div.slides-container div.slide h4.slide-title {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   font-family: "futurabq-medium";
@@ -735,7 +753,7 @@ section.carousel div.slides-container div.slide h4.slide-title {
 }
 
 section.carousel div.slides-container div.slide h5.slide-desc {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   font-family: "futura-light-bt";
@@ -780,7 +798,7 @@ section.carousel div.indicator-container button.active-indicator {
 }
 
 section.portal {
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,7 +809,7 @@ section.portal {
 section.portal div.portal-left {
   width: 50%;
   background-color: #37afb9;
-  padding: 3.5rem 12rem 5.5rem 7.5rem;
+  padding: 3.5rem 11.5rem 5rem 7.5rem;
 }
 
 section.portal div.portal-left h3.portal-title {
@@ -806,7 +824,7 @@ section.portal div.portal-left h3.portal-title {
 }
 
 section.portal div.portal-left h4.portal-subtitle {
-  font-size: 1.5rem;
+  font-size: 23px;
   font-weight: 300;
   color: #ffffff;
   font-family: "futura-light-bt";
@@ -816,7 +834,7 @@ section.portal div.portal-left h4.portal-subtitle {
 }
 
 section.portal div.portal-left p.portal-desc {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 300;
   color: #ffffff;
   font-family: "futura-light-bt";
@@ -829,7 +847,7 @@ section.portal div.portal-left p.portal-desc {
 section.portal div.portal-right {
   width: 50%;
   background-color: #a5d2d2;
-  padding: 3.5rem 7.5rem 9rem 3.5rem;
+  padding: 3.5rem 7rem 8rem 3.5rem;
 }
 
 section.portal div.portal-right div.point-expand {
@@ -853,7 +871,7 @@ section.portal div.portal-right div.portal-point img.arrow {
 }
 
 section.portal div.portal-right div.portal-point h4.point-desc {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 300;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -899,37 +917,37 @@ section.portal img.tablet {
 
 @media screen and (min-width: 1800px) {
   section.portal div.portal-left {
-    padding: 3.5rem 12rem 5.5rem 9rem;
+    padding: 3.5rem 12rem 5rem 9rem;
   }
   section.portal div.portal-right {
-    padding: 3.5rem 9rem 9rem 3.5rem;
+    padding: 3.5rem 9rem 8rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1800px) {
   section.portal div.portal-left {
-    padding: 3.5rem 12rem 5.5rem 7.5rem;
+    padding: 3.5rem 11.5rem 5rem 7.5rem;
   }
   section.portal div.portal-right {
-    padding: 3.5rem 7.5rem 9rem 3.5rem;
+    padding: 3.5rem 7rem 8rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   section.portal div.portal-left {
-    padding: 3.5rem 9.5rem 5.5rem 4.5rem;
+    padding: 3.5rem 9.5rem 5rem 4.5rem;
   }
   section.portal div.portal-right {
-    padding: 3.5rem 4.5rem 9rem 3.5rem;
+    padding: 3.5rem 4.5rem 7rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   section.portal div.portal-left {
-    padding: 3.5rem 8rem 5.5rem 4rem;
+    padding: 3.5rem 8rem 5rem 4rem;
   }
   section.portal div.portal-right {
-    padding: 3.5rem 4rem 9rem 3.5rem;
+    padding: 3.5rem 4rem 7rem 3.5rem;
   }
   section.portal img.tablet {
     position: absolute;
@@ -1010,7 +1028,7 @@ section.services div.services-desc h3.services-title {
 }
 
 section.services div.services-desc h4.services-title-desc {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 300;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -1080,16 +1098,17 @@ section.services div.services-desc div.services-container div.service img.arrow 
 }
 
 section.services div.services-desc div.services-container div.service div.service-details h4.service-title {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   color: #005f96;
   font-family: "futurabq-medium";
   line-height: normal;
   letter-spacing: normal;
+  margin-bottom: 0.5rem;
 }
 
 section.services div.services-desc div.services-container div.service div.service-details h5.service-desc {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 300;
   color: #005f96;
   font-family: "futura-light-bt";
@@ -1227,14 +1246,14 @@ section.owners div.owners-container div.owner-contact {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem 0 1.7rem;
   height: 2rem;
   background-color: #a5d2d2;
 }
 
 section.owners div.owners-container div.owner-contact h3.bold {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #005f96;
   font-family: "futurabq-medium";
   line-height: normal;
@@ -1248,11 +1267,12 @@ section.owners div.owners-container div.owner-contact h3.bold p.owner-data {
   font-size: 1.5rem;
   font-weight: normal;
   color: #005f96;
-  font-family: "futurabq-medium";
+  font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
   line-height: 0.54;
   display: inline-block;
+  letter-spacing: 0.5px;
   cursor: pointer;
 }
 
@@ -1260,9 +1280,10 @@ section.owners div.owners-container div.owner-contact h3.bold p.owner-data:hover
   font-size: 1.5rem;
   font-weight: normal;
   color: #ed7102;
-  font-family: "futurabq-medium";
+  font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
+  letter-spacing: 0.5px;
 }
 
 section.owners div.owners-container div.owner-contact h3#contact {
@@ -1305,7 +1326,7 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
 
 section.owners div.owners-container div.owner-carousel-container div.owner-container div.owner div.owner-name h4.owner-name {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #005f96;
   font-family: "futurabq-medium";
   line-height: normal;
@@ -1318,7 +1339,7 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
   font-size: 1.1rem;
   font-weight: normal;
   color: #005f96;
-  font-family: "futurabq-medium";
+  font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
   line-height: 1.28;
@@ -1578,7 +1599,8 @@ section.contact-us div.forms form.contact-form {
 
 section.contact-us div.forms form.contact-form input[type="text"],
 section.contact-us div.forms form.contact-form input[type="email"],
-section.contact-us div.forms form.contact-form input[type="tel"] {
+section.contact-us div.forms form.contact-form input[type="tel"],
+section.contact-us div.forms form.contact-form select {
   background-color: transparent;
   outline: none;
   border: none;
@@ -1598,7 +1620,7 @@ section.contact-us div.forms form.contact-form input[type="email"]::-webkit-inpu
 section.contact-us div.forms form.contact-form input[type="tel"]::-webkit-input-placeholder {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #a5d2d2;
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
@@ -1611,7 +1633,7 @@ section.contact-us div.forms form.contact-form input[type="email"]:-ms-input-pla
 section.contact-us div.forms form.contact-form input[type="tel"]:-ms-input-placeholder {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #a5d2d2;
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
@@ -1624,7 +1646,7 @@ section.contact-us div.forms form.contact-form input[type="email"]::-ms-input-pl
 section.contact-us div.forms form.contact-form input[type="tel"]::-ms-input-placeholder {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #a5d2d2;
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
@@ -1637,12 +1659,16 @@ section.contact-us div.forms form.contact-form input[type="email"]::placeholder,
 section.contact-us div.forms form.contact-form input[type="tel"]::placeholder {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #a5d2d2;
   font-family: "futura-light-bt";
   line-height: normal;
   letter-spacing: normal;
   line-height: 1.33;
   padding: 0.3rem 0;
+}
+
+section.contact-us div.forms form.contact-form select {
+  color: #a5d2d2;
 }
 
 section.contact-us div.forms form.contact-form input[type="checkbox"] {
@@ -1654,6 +1680,7 @@ section.contact-us div.forms form.contact-form input[type="checkbox"] {
   width: 1.5rem;
   background-color: transparent;
   border: 2px solid white;
+  margin: 0 0.3rem 0 0;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
   display: -webkit-inline-box;
@@ -1861,7 +1888,7 @@ html {
   text-decoration: none;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 500;
   color: #ffffff;
   font-family: "Gotham-Medium";
@@ -2033,8 +2060,17 @@ footer div.right div.item i#arrow {
 
 footer div.right div.item h4.item-desc {
   font-size: 1.1rem;
+  font-weight: normal;
+  color: #ffffff;
+  font-family: "futurabq-medium";
+  line-height: normal;
+  letter-spacing: normal;
   line-height: 2;
   text-transform: capitalize;
+}
+
+footer div.right div.item h4.item-desc:hover {
+  color: #005f96;
 }
 
 footer div.right div.item:hover {
@@ -2056,6 +2092,9 @@ footer div.right div.item:hover {
 }
 
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

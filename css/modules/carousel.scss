@@ -6,11 +6,11 @@ section.carousel {
     div.slide {
       margin: 3.5rem 25rem 0rem;
       h4.slide-title {
-        @include fontstyle(1.1rem, 500, $font_white, "futurabq-medium");
+        @include fontstyle(18px, 500, $font_white, "futurabq-medium");
         text-align: center;
       }
       h5.slide-desc {
-        @include fontstyle(1.1rem, 500, $font_white, "futura-light-bt");
+        @include fontstyle(18px, 500, $font_white, "futura-light-bt");
         text-align: center;
         padding: 2rem 4rem;
         line-height: 1.33;

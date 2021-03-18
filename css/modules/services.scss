@@ -11,7 +11,7 @@ section.services {
       line-height: 1.33;
     }
     h4.services-title-desc {
-      @include fontstyle(1.1rem, 300, $font_blue, "futura-light-bt");
+      @include fontstyle(18px, 300, $font_blue, "futura-light-bt");
       line-height: 1.33;
       padding: 0 0 2.5rem 0;
     }
@@ -44,10 +44,11 @@ section.services {
         }
         div.service-details {
           h4.service-title {
-            @include fontstyle(1.1rem, 500, $font_blue, "futurabq-medium");
+            @include fontstyle(18px, 500, $font_blue, "futurabq-medium");
+            margin-bottom: 0.5rem;
           }
           h5.service-desc {
-            @include fontstyle(1.1rem, 300, $font_blue, "futura-light-bt");
+            @include fontstyle(18px, 300, $font_blue, "futura-light-bt");
             line-height: 1.33;
           }
         }
