@@ -16,6 +16,7 @@ nav {
   }
   span.header-links {
     height: auto;
+    
     img {
       width: 18px;
       height: 19px;
@@ -163,12 +164,18 @@ div.header_img-container {
       overflow: hidden;
       transition: 0.4s ease-in-out;
       background-color: rgba($color: $blue_shade3, $alpha: 0.8);
-      @include displayflex(column, center, space-evenly);
+      
+      span.links-wrapper{
+        @include displayflex(column, center, space-evenly);
+
+        margin: 5rem 0;
+        height: calc(38.55vh - 8rem) ;
+      }
       span#phone {
         display: none;
       }
       a {
-        @include fontstyle(1rem, 300, $font_white);
+        @include fontstyle(1.25rem, 300, $font_white);
         &:hover {
           font-weight: bold;
         }
@@ -189,7 +196,7 @@ div.header_img-container {
     div.header_text-container {
       height: auto;
       width: 100%;
-      padding: 2rem 1rem;
+      padding: 4rem 1rem;
       h1 {
         @include fontstyle(1.5rem, bold, $font_blue, "futura-bold-bt");
         line-height: 1.35;

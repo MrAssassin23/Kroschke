@@ -240,6 +240,8 @@ div.header_img-container div.header_text-container a {
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     background-color: rgba(0, 95, 150, 0.8);
+  }
+  nav span.header-links span.links-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -253,12 +255,14 @@ div.header_img-container div.header_text-container a {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 5rem 0;
+    height: calc(38.55vh - 8rem);
   }
   nav span.header-links span#phone {
     display: none;
   }
   nav span.header-links a {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 300;
     color: #ffffff;
     font-family: "futura-light-bt";
@@ -289,7 +293,7 @@ div.header_img-container div.header_text-container a {
   div.header_img-container div.header_text-container {
     height: auto;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
   }
   div.header_img-container div.header_text-container h1 {
     font-size: 1.5rem;
@@ -1422,7 +1426,7 @@ section.owners div.owners-container div.owner-carousel-container div.owner-conta
 
 @media screen and (max-width: 550px) {
   section.owners div.owners-container {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -1595,6 +1599,20 @@ section.contact-us div.forms form.contact-form {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 2rem;
+}
+
+section.contact-us div.forms form.contact-form div.checkbox-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.contact-us div.forms form.contact-form div.checkbox-flex label.checkbox-label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 section.contact-us div.forms form.contact-form input[type="text"],
@@ -1843,6 +1861,7 @@ section.contact-us div.forms form#form3 .full {
   }
   section.contact-us div.form-buttons button.from-btns {
     margin: 0.4rem 0.3rem;
+    width: 100%;
   }
   section.contact-us div.forms {
     min-width: 300px;
@@ -1850,6 +1869,9 @@ section.contact-us div.forms form#form3 .full {
   }
   section.contact-us div.forms form.contact-form .half {
     grid-column: span 2;
+  }
+  section.contact-us div.forms form#form3 {
+    gap: 2rem 0rem;
   }
   section.contact-us div.forms form#form3 .half {
     grid-column: span 3;
@@ -2095,6 +2117,9 @@ footer div.right div.item:hover {
   html {
     font-size: 14px;
   }
+  a.sml-btn {
+    padding: 1rem 3.5rem;
+  }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2123,6 +2148,7 @@ footer div.right div.item:hover {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 0rem;
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -52,6 +52,14 @@ section.contact-us {
       grid-template-columns: repeat(2, 1fr);
       gap: 2.5rem 2rem;
 
+      div.checkbox-flex{
+        display: flex;
+        label.checkbox-label{
+          flex: 1;
+          transform: translateY(-20%);
+        }
+      }
+
       input[type="text"],
       input[type="email"],
       input[type="tel"],
@@ -151,6 +159,7 @@ section.contact-us {
   }
 }
 @media screen and (max-width: 800px) {
+
   section.contact-us {
     div.form-buttons {
       width: 90%;
@@ -159,6 +168,7 @@ section.contact-us {
       align-items: center;
       button.from-btns {
         margin: 0.4rem 0.3rem;
+        width: 100%;
       }
     }
     div.forms {
@@ -170,6 +180,7 @@ section.contact-us {
         }
       }
       form#form3 {
+        gap: 2rem 0rem;
         .half {
           grid-column: span 3;
         }

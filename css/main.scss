@@ -171,6 +171,9 @@ footer {
   html{
     font-size: 14px;
   }
+  a.sml-btn{
+    padding: 1rem 3.5rem;
+  }
   footer {
     flex-direction: column;
     justify-content: center;
@@ -188,6 +191,7 @@ footer {
       margin-top: 2rem;
       align-items: center;
       padding-right: 0rem;
+      margin-bottom: 2rem;
     }
   }
 }
